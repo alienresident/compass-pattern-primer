@@ -1,0 +1,26 @@
+label {
+  cursor: pointer;
+}
+input[type],
+textarea,
+select {
+  background-color: $forms-background-color;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  @include bounding-box(padding, $forms-padding);
+  @include bounding-box(border, false, $forms-border-pos, $forms-border-width, $forms-border-style, $forms-border-color);
+  @include border-radius($forms-border-radius);
+  &:focus {
+    border-color: $forms-focus-border-color;
+  }
+}
+input[type="checkbox"],
+input[type="radio"],
+input[type="image"] {
+  width: auto;
+}
+input[required],
+textarea[required] {
+  border-color: $forms-required-border-color;
+}

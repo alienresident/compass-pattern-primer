@@ -1,0 +1,22 @@
+/* @group options */
+
+.options {
+  list-style: $options-list-style;
+  @include bounding-box(border, false, $options-border-pos, $options-border-width, $options-border-style, $options-border-color);
+}
+.options li {
+  text-indent: $options-li-text-indent;
+  font-family: $options-li-font-family;
+  text-transform: $options-li-text-transform;
+  letter-spacing: $options-li-letter-spacing;
+  font-weight: $options-li-font-weight;
+  @include bounding-box(margin, $options-li-margin);
+  @include bounding-box(padding, $options-li-padding);
+  @include bounding-box(border, false, $options-li-border-pos, $options-li-border-width, $options-li-border-style, $options-li-border-color);
+}
+.options a {
+  display: block;
+  @include bounding-box(border, false, $options-a-border-pos, $options-a-border-width, $options-a-border-style, $options-a-border-color);
+}
+
+/* @end options*/

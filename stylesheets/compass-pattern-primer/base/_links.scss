@@ -1,0 +1,24 @@
+a {
+  color: $link-color;
+  text-decoration: $link-text-decoration;
+  @include bounding-box(border, false, $link-border-pos, $link-border-width, $link-border-style, $link-border-color);
+  &:link,
+  &:visited {
+    color: $link-visited-link-color;
+    @include bounding-box(border, false, $link-visited-border-pos, $link-visited-border-width, $link-visited-border-style, $link-visited-border-color);
+  }
+  &[href]:hover,
+  &[href]:focus {
+    color: $link-hover-link-color;
+    text-decoration: $link-hover-text-decoration;
+    @include bounding-box(border, false, $link-hover-border-pos, $link-hover-border-width, $link-hover-border-style, $link-hover-border-color);
+  }
+  &:active {
+    color: $link-active-link-color;
+    @include bounding-box(border, false, $link-active-border-pos, $link-active-border-width, $link-active-border-style, $link-active-border-color);
+  } 
+  .logo &, h1 &, h2 &, h3 & {
+    color: $headers-link-color;
+    @include bounding-box(border, false, $logo-headers-border-pos, $logo-headers-border-width, $logo-headers-border-style, $logo-headers-border-color);
+  }
+}

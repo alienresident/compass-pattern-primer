@@ -1,0 +1,145 @@
+@mixin simple-background-gradient($button-color, $background-gradient-pos, $background-gradient-1, $background-gradient-2) {
+  color: $button-color;
+  // provide background color for older IEs
+  background-color: background-color-mix($background-gradient-1, $background-gradient-2);
+  @include background-image(linear-gradient($background-gradient-pos, $background-gradient-1, $background-gradient-2));
+}
+
+@mixin bounding-box($type, $amount: false, $side: false, $color: false, $style: false, $width: false) {
+  @if $type == 'border' and $side == none {
+    #{$type}: $side;
+  } @else if $type == 'border' and $side {
+    #{$type}-#{$side}: $color $style $width;
+  } @else if $type == 'border' {
+    #{$type}: $color $style $width;
+  } @else  if $side {
+    #{$type}-#{$side}: $amount;
+  } @else {
+    #{$type}: $amount;
+  }
+}
+
+@mixin type-size($size, $leading: false) {
+  font-size: $size;
+  @if $leading { line-height: $leading; }
+}
+
+@mixin bold-italic-uppercase-variant($bold :default, $italic: false, $uppercase: false, $variant: false) {
+  @if $bold { font-weight: bold; } @else { font-weight: normal; }
+  @if $italic { font-style: italic; }
+  @if $uppercase { text-transform: uppercase; }
+  @if $variant { font-variant: small-caps; }
+}
+
+@mixin content-before-after($content, $before: default, $after:false ) {
+  @if $before { &:before { content: $content; } }
+  @if $after { &:after { content: $content; } }
+}
+
+// From https://github.com/Team-Sass/Style-Prototypes
+@mixin generate-colour-guide($colours...) {
+  $singleton: false;
+  $length: 0;
+
+  @if length($colours) == 1 and type-of(nth($colours, 1)) == 'list' {
+    $colours: nth($colours, 1);
+    $singleton: true;
+    $length: length($colours);
+  }
+  @else if length($colours) > 0 {
+    $length: length(nth($colours, 1));
+  }
+
+  @if length($colours) > 0 {
+    .color-guide {
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        list-style: none;
+        height: 3em;
+        position: relative;
+
+        @include grid-span(1, 1, $length, 0, $output-style: 'float');
+
+        &:nth-child(#{$length}n) {
+          @include grid-span(1, ($length), $length, 0, $output-style: 'float');
+          margin-right: 0;
+        }
+
+        &:before, &:after,
+        &:nth-child(#{$length}n):before,
+        &:nth-child(#{$length}n):after {
+          position: absolute;
+          height: 1.25em;
+          width: 100%;
+          @include box-sizing('border-box');
+          margin: 0;
+          padding: 0;
+          left: 0;
+          text-align: center;
+        }
+
+        &:before {
+          top: .25em;
+        }
+        &:after {
+          bottom: .25em;
+        }
+
+        @if $singleton == true {
+          $i: 1;
+          @each $colour in $colours {
+            &:nth-child(#{$i}) {
+              background-color: $colour;
+              @include colour-name($colour, $i);
+            }
+            $i: $i+1;
+          }
+        }
+        @else {
+          $i: 1;
+          @each $colour in $colours {
+            $j: 1;
+            @each $single in $colour {
+              &:nth-child(#{$i}) {
+                background-color: $single;
+                @include colour-name($single, $j);
+              }
+              $j: $j+1;
+              $i: $i+1;
+            }
+            $j: 1;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@mixin generate-color-guide($colors...) {
+  @include generate-colour-guide($colors);
+}
+
+@mixin colour-name($colour, $position) {
+  $lightness: lightness($colour);
+
+  $color: black;
+
+  @if $lightness < 50% {
+    $color: white;
+  }
+
+  &:before, &:after {
+    color: $color;
+  }
+  &:before {
+    content: '#{$colour}';
+  }
+  &:after {
+    content: attr(data-sass);
+  }
+}

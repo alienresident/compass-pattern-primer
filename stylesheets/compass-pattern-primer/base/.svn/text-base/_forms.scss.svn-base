@@ -1,0 +1,125 @@
+/* @group Forms */
+
+label {
+  cursor: pointer;
+}
+input[type],
+textarea,
+select {
+  background-color: $forms-background-color;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  @include bounding-box(padding, $forms-padding);
+  @include bounding-box(border, false, $forms-border-pos, $forms-border-width, $forms-border-style, $forms-border-color);
+  @include border-radius($forms-border-radius);
+  &:focus {
+    outline: none;
+    border-color: $forms-focus-border-color;
+  }
+}
+input[type="checkbox"],
+input[type="radio"],
+input[type="image"] {
+  width: auto;
+}
+input[required],
+textarea[required] {
+  border-color: $forms-required-border-color;
+}
+button,
+input[type="button"],
+input[type="submit"] {
+  width: auto;
+  text-align: center;
+  font-family: $button-font-family;
+  font-size: inherit;
+  font-weight: normal;
+  font-style: normal;
+  @include bounding-box(border, false, $button-border-pos, $button-border-width, $button-border-style, $button-border-color);
+  cursor: pointer;
+  @include bounding-box(padding, $button-padding);
+  line-height: 1;
+  @include simple-background-gradient($button-color, $button-gradient-pos, $button-gradient-stop-1, $button-gradient-stop-2);
+  @include text-shadow($button-text-shadow);
+  @include border-radius($button-border-radius);
+  &:hover,
+  &:focus {
+    outline: none;
+    @include text-shadow($button-hover-text-shadow);
+    @include simple-background-gradient($button-hover-color, $button-hover-gradient-pos, $button-hover-gradient-stop-1, $button-hover-gradient-stop-2);
+  }  
+  &:active {
+    @include text-shadow($button-active-text-shadow);
+    @include simple-background-gradient($button-active-color, $button-active-gradient-pos, $button-active-gradient-stop-1, $button-active-gradient-stop-2);
+  }
+  &.active {
+    @include text-shadow($button-action-text-shadow);
+    @include simple-background-gradient($button-action-color, $button-action-gradient-pos, $button-action-gradient-stop-1, $button-action-gradient-stop-2);
+    &:hover,
+    &:focus {
+      outline: none;
+      @include text-shadow($button-action-hover-text-shadow);
+      @include simple-background-gradient($button-action-hover-color, $button-action-hover-gradient-pos, $button-action-hover-gradient-stop-1, $button-action-hover-gradient-stop-2);
+    }
+    &:active {
+      @include text-shadow($button-action-active-text-shadow);
+      @include simple-background-gradient($button-action-active-color, $button-action-active-gradient-pos, $button-action-active-gradient-stop-1, $button-action-active-gradient-stop-2);
+    }
+  }
+}
+button[name="eventSubmit_doCancel"],
+input.cancel,
+input[type="button"][value="Cancel"],
+input[type="submit"][value="Cancel"] {
+  @include text-shadow($button-cancel-text-shadow);
+  @include simple-background-gradient($button-cancel-color, $button-cancel-gradient-pos, $button-cancel-gradient-stop-1, $button-cancel-gradient-stop-2);
+  &:hover,
+  &:focus {
+    outline: none;
+    @include text-shadow($button-cancel-hover-text-shadow);
+    @include simple-background-gradient($button-cancel-hover-color, $button-cancel-hover-gradient-pos, $button-cancel-hover-gradient-stop-1, $button-cancel-hover-gradient-stop-2);
+  }
+  &:active {
+    @include text-shadow($button-cancel-active-text-shadow);
+    @include simple-background-gradient($button-cancel-active-color, $button-cancel-active-gradient-pos, $button-cancel-active-gradient-stop-1, $button-cancel-active-gradient-stop-2);
+  }
+}
+button[disabled="disabled"],
+input[type="button"][disabled="disabled"],
+input[type="submit"][disabled="disabled"] {
+  @include text-shadow($button-disabled-text-shadow);
+  opacity: $button-disabled-opacity;
+  @include simple-background-gradient($button-disabled-color, $button-disabled-gradient-pos, $button-disabled-gradient-stop-1, $button-disabled-gradient-stop-2);
+  &:hover,
+  &:focus,
+  &:active {
+  @extend button[disabled="disabled"];
+  }
+}
+
+/* @group search */
+[role="search"] {
+  position: relative;
+  background-color: $search-background-color;
+  @include bounding-box(border, false, $search-border-pos, $search-border-width, $search-border-style, $search-border-color);
+  @include bounding-box(padding, $search-padding);
+  @include border-radius($search-border-radius);
+  input[type="search"], input {
+    @include bounding-box(border, false, $search-input-border-pos, $search-input-border-width, $search-input-border-style, $search-input-border-color);
+    -webkit-appearance: none;
+    @include border-radius($search-input-border-radius);
+  }
+  input[type="image"] {
+    background-color: $search-image-background-color;
+    position: absolute;
+    width: $search-image-width;
+    top: $search-image-top;
+    right: $search-image-right;
+    @include bounding-box(padding, $search-image-padding);
+  }
+}
+
+/* @end search */
+
+/* @end Forms */

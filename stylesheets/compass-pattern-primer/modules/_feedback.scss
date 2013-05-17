@@ -1,0 +1,9 @@
+.feedback {
+  @extend %feedback;
+  &.error {
+    @extend %error;
+  }
+  &.warning {
+    @extend %warning;
+  }
+}

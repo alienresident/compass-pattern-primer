@@ -1,0 +1,18 @@
+/* @group Typography */
+
+html {
+  @include bounding-box(border, false, $html-border-pos, $html-border-width, $html-border-style, $html-border-color);
+  background-color: $html-background-color;
+}
+body {
+  background-color: $body-background-color;
+  background: $body-background-rgba;
+  @include bounding-box(margin, $body-margin);
+  @include bounding-box(padding, $body-padding);
+  @include type-size($body-font-size, $body-line-height);
+  font-family: $body-font-family;
+  color: $body-color;
+  @include bounding-box(border, false, $body-border-pos, $body-border-width, $body-border-style, $body-border-color);
+  @include bounding-box(border, false, $body-border-pos2, $body-border-width2, $body-border-style2, $body-border-color2);
+  border-color: $body-border-color-rgba;
+}

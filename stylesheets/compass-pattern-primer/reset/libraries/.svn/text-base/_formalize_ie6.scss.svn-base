@@ -1,0 +1,80 @@
+// Note: This file is dependent on Sass and Compass.
+// Sass = http://sass-lang.com
+// Compass = http://compass-style.org
+
+// `IE6
+//----------------------------------------------------------------------------------------------------
+
+// Everything below this line is for IE6.
+// Delete it if you don't support it! :)
+
+// Classes are added dynamically via JS,
+// because IE6 doesn't support attribute
+// selectors: .ie6_button, .ie6_input, etc.
+
+// Note: These style rules are somewhat
+// duplicated because IE6 bombs out when
+// it sees attribute selectors. Example:
+
+//   .ie6_button {
+//     This works in IE6.
+//   }
+
+//   .ie6_button,
+//   input[type=submit] {
+//     This doesn't work.
+//   }
+
+.ie6_button,
+* html button,
+* html a.button {
+  background: #dddddd image-url("button.png") repeat-x;
+  border: 1px solid;
+  border-color: #dddddd #bbbbbb #999999;
+  cursor: pointer;
+  color: #333333;
+  font: bold 12px / 1.2 Arial, sans-serif;
+  padding: 2px 10px 0px;
+  text-decoration: none;
+  overflow: visible;
+  vertical-align: top;
+  width: auto;
+}
+
+* html a.button {
+  position: relative;
+  top: 3px;
+  padding-bottom: 2px;
+}
+
+* html button {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.ie6_input,
+* html textarea,
+* html select {
+  background: white;
+  border: 1px solid;
+  border-color: #848484 #c1c1c1 #e1e1e1;
+  color: black;
+  padding: 2px 3px 1px;
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  vertical-align: top;
+}
+
+* html select {
+  margin-top: 1px;
+}
+
+.placeholder_text,
+.ie6_input_disabled,
+.ie6_button_disabled {
+  color: #888888;
+}
+
+.ie6_input_disabled {
+  background: #eeeeee;
+}

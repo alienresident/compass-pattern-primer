@@ -1,0 +1,23 @@
+/* @group Links */
+
+a {
+  text-decoration: $link-text-decoration;
+  @include bounding-box(border, false, $link-border-pos, $link-border-width, $link-border-style, $link-border-color);
+  //white-space: pre-wrap;
+  &:link,
+  &:visited {
+    @include bounding-box(border, false, $link-visited-border-pos, $link-visited-border-width, $link-visited-border-style, $link-visited-border-color);
+  }
+  &[href]:hover,
+  &[href]:focus {
+    @include bounding-box(border, false, $link-hover-border-pos, $link-hover-border-width, $link-hover-border-style, $link-hover-border-color);
+  }
+  &:active {
+    @include bounding-box(border, false, $link-active-border-pos, $link-active-border-width, $link-active-border-style, $link-active-border-color);
+  } 
+  .logo &, h1 &, h2 &, h3 & {
+    @include bounding-box(border, false, $logo-headers-border-pos, $logo-headers-border-width, $logo-headers-border-style, $logo-headers-border-color);
+  }
+}
+
+/* @end Links */

@@ -1,0 +1,35 @@
+/* @group pagination */
+
+.pagination {
+  font-family: $pagination-font-family;
+}
+.pagination li {
+  display: $pagination-li-display;
+  @include bounding-box(margin, $pagination-li-margin, $pagination-li-margin-pos);
+  text-indent: $pagination-text-indent;
+}
+.pagination a {
+  display: $pagination-a-display;
+  @include bounding-box(padding, $pagination-a-padding);
+  line-height: $pagination-a-line-height;
+  @include bounding-box(margin, $pagination-a-margin);
+  @include bounding-box(border, false, $pagination-a-border-pos, $pagination-a-border-width, $pagination-a-border-style, $pagination-a-border-color);
+  @include border-radius($pagination-a-border-radius);
+  background-clip: padding-box;
+}
+.pagination a:link,
+.pagination a:visited {
+  color: $pagination-link-color;
+  background-color: $pagination-link-background-color;
+}
+.pagination a[href]:hover,
+.pagination a[href]:focus {
+  color: $pagination-link-hover-color;
+  background-color: $pagination-link-hover-background-color;
+}
+.pagination a:active {
+  color: $pagination-link-active-color;
+  background-color: $pagination-link-active-background-color;
+}
+
+/* @end pagination*/
