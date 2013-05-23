@@ -54,5 +54,6 @@ help %Q{
 #  Users will see this when they create a new project using this template.
 welcome_message %Q{
   Welcome to Compass Pattern Primer! 
-  For documentation help contact: mark@alienresident.net 
+  Documentation: https://github.com/alienresident/compass-pattern-primer
+  Contact: mark@alienresident.net 
 }
