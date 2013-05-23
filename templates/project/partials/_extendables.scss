@@ -21,10 +21,7 @@
   word-break: break-all;
   word-break: break-word;
   word-break: hyphenate;
-  -ms-hyphens: auto;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto;
+  @include hyphens(auto);
 }
 
 %group {
