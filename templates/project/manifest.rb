@@ -13,15 +13,16 @@ file 'partials/_mixins.scss',  :like => :stylesheet, :to => 'partials/_mixins.sc
 file 'partials/_variables.scss',  :like => :stylesheet, :to => 'partials/_variables.scss'
 
 # Variables
-file 'partials/base/_page.scss',  :like => :stylesheet, :to => 'partials/base/_page.scss'
-file 'partials/modules/_header.scss',  :like => :stylesheet, :to => 'partials/modules/_header.scss'
-file 'partials/modules/_footer.scss',  :like => :stylesheet, :to => 'partials/modules/_footer.scss'
-file 'partials/layout/_breakpoints.scss',  :like => :stylesheet, :to => 'partials/layout/_breakpoints.scss'
-file 'partials/layout/_page.scss',  :like => :stylesheet, :to => 'partials/layout/_page.scss'
-file 'partials/state/_page.scss',  :like => :stylesheet, :to => 'partials/state/_page.scss'
-file 'partials/state/_header.scss',  :like => :stylesheet, :to => 'partials/state/_header.scss'
-file 'partials/state/_footer.scss',  :like => :stylesheet, :to => 'partials/state/_footer.scss'
-file 'partials/theme/_page.scss',  :like => :stylesheet, :to => 'partials/theme/_page.scss'
+file 'partials/variables/base/_page.scss',  :like => :stylesheet, :to => 'partials/variables/base/_page.scss'
+file 'partials/variables/modules/_header.scss',  :like => :stylesheet, :to => 'partials/variables/modules/_header.scss'
+file 'partials/variables/modules/_footer.scss',  :like => :stylesheet, :to => 'partials/variables/modules/_footer.scss'
+file 'partials/variables/layout/_breakpoints.scss',  :like => :stylesheet, :to => 'partials/variables/layout/_breakpoints.scss'
+file 'partials/variables/layout/_page.scss',  :like => :stylesheet, :to => 'partials/variables/layout/_page.scss'
+file 'partials/variables/state/_page.scss',  :like => :stylesheet, :to => 'partials/variables/state/_page.scss'
+file 'partials/variables/state/_header.scss',  :like => :stylesheet, :to => 'partials/variables/state/_header.scss'
+file 'partials/variables/state/_footer.scss',  :like => :stylesheet, :to => 'partials/variables/state/_footer.scss'
+file 'partials/variables/theme/_page.scss',  :like => :stylesheet, :to => 'partials/variables/theme/_page.scss'
+file 'partials/variables/theme/_overrides.scss',  :like => :stylesheet, :to => 'partials/variables/theme/_overrides.scss'
 
 # SMACSS
 file 'base/_page.scss',  :like => :stylesheet, :to => 'base/_page.scss'
