@@ -1,0 +1,17 @@
+//////////////////////////////
+// VARIABLES: Master variable import file 
+//////////////////////////////
+
+@import "partials/variables/base/_page";
+
+@import "partials/variables/modules/_header";
+@import "partials/variables/modules/_footer";
+
+@import "partials/variables/layout/_breakpoints";
+@import "partials/variables/layout/_page";
+
+@import "partials/variables/state/_page";
+@import "partials/variables/state/_header";
+@import "partials/variables/state/_footer";
+
+@import "partials/variables/theme/_page";

@@ -1,1 +1,1 @@
-0.1 first pass at creating extension
+0.1 first pass at creating compass extension and ruby gem
