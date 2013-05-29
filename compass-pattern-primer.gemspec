@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.name = "compass-pattern-primer"
   s.rubyforge_project = "compass-pattern-primer"
   # Description of your extension
-  s.description = %q{A Compass extension to build style guides}
+  s.description = %q{A Compass extension to help create style guides}
   # A summary of your Compass extension. Should be different than Description
   s.summary = %q{An easy to use system to build style guide based off of Jeremy Keith's Pattern Primer.}
   # The names of the author(s) of the extension.
@@ -23,7 +23,7 @@ Gem::Specification.new do |s|
   # If more than one author, comma separate inside of the brackets
   s.email = ["mark@alienresident.net"]
   # URL of the extension
-  s.homepage = "http://alienresident.net"
+  s.homepage = "https://rubygems.org/gems/compass-pattern-primer"
 
   # Gem Files
   # These are the files to be included in your Compass extension.

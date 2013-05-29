@@ -1,5 +1,5 @@
-@import 'toolkit';
-@import "singularitygs";
+@import 'toolkit';  // tint-stack, shade-stack etc
+@import "singularitygs"; // require for generate-colour-guide mixin
 
 //////////////////////////////
 // Color Stacks
