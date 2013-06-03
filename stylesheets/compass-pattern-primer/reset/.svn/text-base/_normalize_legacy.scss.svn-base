@@ -1,6 +1,0 @@
-/* @group Reset */
-
-@import "libraries/_normalize";
-@import "libraries/_normalize_legacy";
-
-/* @end Reset */

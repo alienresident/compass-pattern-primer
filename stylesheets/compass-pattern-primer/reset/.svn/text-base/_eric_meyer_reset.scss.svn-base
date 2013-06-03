@@ -1,5 +1,0 @@
-/* @group Reset */
-
-@import "libraries/_eric_meyer_reset";
-
-/* @end Reset */

@@ -1,8 +1,0 @@
-/* @group Reset */
-
-@import "libraries/_formalize";
-@import "libraries/_formalize_ie6";
-@import "libraries/_normalize";
-@import "libraries/_normalize_legacy";
-
-/* @end Reset */
