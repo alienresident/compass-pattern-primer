@@ -1,6 +1,7 @@
 //////////////////////////////
 // COLORS: Create a color scheme
 //////////////////////////////
+@import 'toolkit';  // tint-stack, shade-stack etc 
 
 // Example color scheme
   
@@ -23,4 +24,4 @@
 // $primary:   tint-stack(cs-primary());
 // $secondary: tint-stack(cs-secondary());
 // $tertiary:  tint-stack(cs-tertiary());
-// $quadrary:  tint-stack(cs-quadrary());                                                                
+// $quadrary:  tint-stack(cs-quadrary());
