@@ -9,3 +9,8 @@ Compass Pattern Primer is a compass extension bundle as a Ruby gem.
 
 ## How it all works
 TK
+
+### Create a local instance
+```
+    compass create <MyProject> -r compass-pattern-primer --using compass-pattern-primer
+```
