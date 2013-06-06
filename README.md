@@ -14,14 +14,26 @@ Compass Pattern Primer is a compass extension bundle as a Ruby gem.
 ```
     sudo gem install compass-pattern-primer
 ```
-You'll need to install Sass, Compass, and Toolkit Ruby Gems too. 
+You'll need to install [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), and [Toolkit](https://github.com/Team-Sass/toolkit) Ruby Gems too. Documentation for installing and using these gems is pretty extensive. 
 
-## How it all works
+## How it works
+
+#### Create a compass project requiring Compass Pattern Primer 
 ```
-    compass create <MyProject> -r compass-pattern-primer --using compass-pattern-primer
+	compass create <MyProject> -r compass-pattern-primer 
+```
+#### Create a compass project using Compass Pattern Primer scaffolding
+```
+	compass create <MyProject> -r compass-pattern-primer --using compass-pattern-primer 
 ```
 
-### Create a compass project using Compass Pattern Primer scaffolding
+#### Add Compass Pattern Primer to an existing project by adding the following to config.rb
 ```
-    compass create <MyProject> -r compass-pattern-primer --using compass-pattern-primer
+    require 'compass-pattern-primer'
 ```
+#### Import the Compass Pattern Primer partial at the top of your working file
+```
+	@import "compass-pattern-primer";
+```
+   
+   
