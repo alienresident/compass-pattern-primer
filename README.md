@@ -47,10 +47,8 @@ This adds the SMACSS scaffolding to your project and creates `pattern-primer.htm
 #### More scaffolding options.
 At the moment there's only one option to use my SMACSS scaffolding and a static html preview page. This works for some use cases but doesn't allow you to easily add patterns. 
 
-I intend to allow an option the original patterns and `index.php` file from Jeremy Keith's [Pattern Primer](https://github.com/adactio/Pattern-Primer) repo. 
+I intend to allow an option that includes the original patterns and `index.php` file from Jeremy Keith's [Pattern Primer](https://github.com/adactio/Pattern-Primer) repo. 
 
 Another option could be to create a very basic scaffolding that doesn't use the SMACSS approach. So that you can use you own. 
 
 **Requests?** let me [know](mailto:mark@alienresident.net)
-     
-   
