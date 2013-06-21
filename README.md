@@ -174,10 +174,12 @@ I intend to allow a scaffolding option that includes the original patterns and `
 Another option could be to create a very basic scaffolding that doesn't use the SMACSS approach. So that you can use you own.
 
 #### Use existing Compass Reset gems
-I realized after the fact that all my reset's existed as compass gems. Doesn't seem like a good idea to duplicate code.
-https://github.com/adamstac/meyer-reset
-https://github.com/ksmandersen/compass-normalize
-https://github.com/pengwynn/compass_formalize
+I realized after the fact that all my reset's existed as compass gems. Doesn't seem like a good idea to duplicate code.  
+- [Meyer Reset](https://github.com/adamstac/meyer-reset)  
+- [Compass Normalize](https://github.com/ksmandersen/compass-normalize)  
+- [Compass Formalize](https://github.com/pengwynn/compass_formalize)  
+
+
 
 #### Simplify `bounding-box` mixin
 At the moment `bounding-box` mixin handles `margin`, `padding`, and `border` styles. I am going to change this to just `margin` and `padding` and create a new mixing to handle `border` and expanded it to support `outline` as the have similar CSS output.
