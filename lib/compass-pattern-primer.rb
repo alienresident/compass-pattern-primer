@@ -3,7 +3,7 @@
 # By default, you should always included Compass. Do not include your
 #  extension.
 require 'compass'
-require 'toolkit' 
+require 'toolkit'
 
 # This tells Compass what your Compass extension is called, and where to find
 #  its files

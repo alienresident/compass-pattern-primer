@@ -41,7 +41,7 @@ file 'theme/_page.scss',  :like => :stylesheet, :to => 'theme/_page.scss'
 # Javascript Import
 # file 'scripts.js', :like => :javascript, :to => 'scripts.js'
 
-file 'pattern-primer.html',:like => :html, :to => "pattern-primer.html"
+file 'pattern-primer.html', :like => :html, :to => "pattern-primer.html"
 # General File Import
 # file 'README.md', :to => "README.md"
 
