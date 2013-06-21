@@ -12,7 +12,7 @@ For my own development work I wanted to move on from Jeremy's work. I reworked t
 ## Installation
 Compass Pattern Primer is a compass extension bundle as a Ruby gem.
    
-```
+```bash
 gem install compass-pattern-primer
 ```
 You'll need to install [Sass](http://sass-lang.com/), [Compass](http://compass-style.org/), and [Toolkit](https://github.com/Team-Sass/toolkit) Ruby Gems too. Documentation for installing and using these gems is pretty extensive. 
@@ -22,26 +22,26 @@ There are a number of ways you can get started with Compass Pattern Primer
 
 #### Create a new Compass project requiring Compass Pattern Primer
  
-```
+```bash
 compass create <MyProject> -r compass-pattern-primer 
 ```
 This creates a new Compass project using the compass standard scaffolding and adds `require 'compass-pattern-primer'` to the `config.rb`.
   
 #### Create a new Compass project using Compass Pattern Primer scaffolding \(SMACSS\)
 
-```
+```bash
 compass create <MyProject> -r compass-pattern-primer --using compass-pattern-primer 
 ```
 This adds a SMACSS style scaffolding to your project and creates `pattern-primer.html` a static html page where you can preview the style guide. *See: **Features to be added** at the bottom of this document for planned alternative scaffolding.* 
 
 #### Add Compass Pattern Primer to an existing project by adding the following to config.rb
 
-```
+```ruby
 require 'compass-pattern-primer'
 ```
 Then import the Compass Pattern Primer partial by adding at the top of your working file
 
-```
+```scss
 @import "compass-pattern-primer";
 ```
 **Note:** *You'll need to restart* `compass watch` *if it's running*
@@ -50,7 +50,7 @@ Then import the Compass Pattern Primer partial by adding at the top of your work
 
 Compass Pattern Primer comes with a reset, base styles, and modules \(controls, feedback, options, pagination\). You can either bring everything into your project by adding `@import "compass-pattern-primer";` to the top of your file. You can also add the individual pieces by adding some (or all) of the following: 
 
-```
+```scss
 @import "compass-pattern-primer/reset"; 
 @import "compass-pattern-primer/base";
 @import "compass-pattern-primer/modules";
@@ -59,20 +59,20 @@ Compass Pattern Primer comes with a reset, base styles, and modules \(controls, 
 ### Reset
 The Compass Pattern Primer Reset incorporates Normalize and Formalize libraries by default. If you don not want to include these set them to false.
 
-```
+```scss
 $use_formalize_reset: false;
 $use_normalize_reset: false;
 ```
 
 The Eric Meyer Reset is available as an option too but it's set to false by default. To change this add:
  
-```
+```scss
 $use_eric_meyer_reset: true;
 ```
 
 Unless you use the SMACSS style scaffolding* legacy support for older IE (6 & 7) browsers in the Normalize and Formalize libraries is set to true by default. To change this add:
 
-```
+```scss
 $legacy-support-for-ie6: false;
 $legacy-support-for-ie7: false;
 ```
@@ -81,7 +81,7 @@ $legacy-support-for-ie7: false;
 
 If you don't want to use the Compass Pattern Primer Reset simply don't import it. You can import just the base and modules.
 
-```
+```scss
 @import "compass-pattern-primer/base";
 @import "compass-pattern-primer/modules";
 ```
@@ -90,12 +90,12 @@ If you don't want to use the Compass Pattern Primer Reset simply don't import it
 The Compass Pattern Primer Base contains partials for your base styles.
 You can add them all:
 
-```
+```scss
 @import "compass-pattern-primer/base";
 ```
 Or selectively, here's the full list you can select which parts:
 
-```
+```scss
 @import "compass-pattern-primer/base/_page";
 @import "compass-pattern-primer/base/_typography";
 @import "compass-pattern-primer/base/_links";
@@ -108,12 +108,12 @@ Or selectively, here's the full list you can select which parts:
 ### Modules
 Similarly the modules allow can be imported whole or selectively. 
 
-```
+```scss
 @import "compass-pattern-primer/modules";
 ``` 
 Or 
 
-```
+```scss
 @import "compass-pattern-primer/modules/_control";
 @import "compass-pattern-primer/modules/_feedback";
 @import "compass-pattern-primer/modules/_options";
@@ -133,7 +133,7 @@ Styles for the buttons, controls, options, and pagination are silent extendables
 
 In this example I am extending an `input` with the `id="reset"` to `%button-active` style.
 
-```
+```scss
 input#reset {
 	@extend %button-active; 
 }
@@ -145,12 +145,12 @@ Color Schemer is feature rich and allows you to generate color schemes using col
 
 The colors also take advantage of `tint-stack` and `shade-stack` to generate 6 (by default but can be extended) tints (mixed with white) or shades (mixed with black) of your colors. Documentation for these functions can be found in [Toolkit](https://github.com/Team-Sass/toolkit).
 
-```
+```scss
 $primary-color:  #57068c;
 $black-value: #333; 
 ```
 
-```
+```scss
 $black:     tint-stack($black-value);
 $primary:   tint-stack(cs-primary());
 $secondary: tint-stack(cs-secondary());
@@ -160,7 +160,7 @@ $quadrary:  tint-stack(cs-quadrary());
 
 The advantage of this is you can design your site using `tint-stack` variables. You can then easily adjust your colors by simply altering the `$primary-color` variable.
 
-```
+```scss
 $link-color: nth($primary, 1); 
 $link-visited-link-color: nth($primary, 2);
 ```  
