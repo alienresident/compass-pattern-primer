@@ -34,20 +34,18 @@ file 'state/_header.scss',  :like => :stylesheet, :to => 'state/_header.scss'
 file 'state/_footer.scss',  :like => :stylesheet, :to => 'state/_footer.scss'
 file 'theme/_page.scss',  :like => :stylesheet, :to => 'theme/_page.scss' 
 
-
-# file 'ie.scss', :like => :stylesheet, :media => 'screen, projection', :condition => "lt IE 9"
-
-
 # Javascript Import
 # file 'scripts.js', :like => :javascript, :to => 'scripts.js'
 
+# HTML Import
 file 'pattern-primer.html', :like => :html, :to => "pattern-primer.html"
+
 # General File Import
 # file 'README.md', :to => "README.md"
 
 # Compass Extension Help
 help %Q{
-  Help for your Compass extension
+  The best place for help is to read the documentation in Github: https://github.com/alienresident/compass-pattern-primer   
 }
 
 # Compass Extension Welcome Message

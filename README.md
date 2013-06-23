@@ -1,16 +1,17 @@
+# Compass Pattern Primer
+### Create Style Guides in HTML and CSS with Sass & Compass
 _This is the development repo for the compass extension and rubygem: [Compass Pattern Primer](https://rubygems.org/gems/compass-pattern-primer)._
 
-# Compass Pattern Primer
 Compass Pattern Primer is a system to quickly generate style guides for your web site or web app. It is based on [Pattern Primer](https://github.com/adactio/Pattern-Primer) by Adactio/Jeremy Keith. It's a collection of starter UI patterns that can be styled for any website. The pattern primer used a PHP document to pull in HTML snippets that can be styled. 
 
 I originally faithfully ported  [Pattern Primer](https://github.com/alienresident/Pattern-Primer) and Jeremy Keith's styles to Sass. Using Sass allows the styles to be quickly changing by overriding a few variables. 
 
 For my own development work I wanted to move on from Jeremy's work. I reworked the Pattern Primer to use Jonathan Snook's [SMACSS](http://smacss.com/) \(Scalable and Modular Architecture for CSS\) as an organizing principle. I separated the partials into base and modules. The styling from the original Pattern Primer is the default style. The intended way to override the original Adactio styling is to change the variables in `partials/variables/theme/_overrides` following the SMACSS paradigm. I have also changed the default Reset from Eric Meyer's to Formalize and Normalize.
 
-*This is a work in progress and any feedback is welcome.* 
+*This is a work in progress and any feedback is very welcome.* 
 
 ## Installation
-Compass Pattern Primer is a compass extension bundle as a Ruby gem.
+Compass Pattern Primer is a compass extension bundled as a Ruby gem.
    
 ```bash
 gem install compass-pattern-primer
@@ -185,5 +186,5 @@ I realized after the fact that all my reset's existed as compass gems. Doesn't s
 At the moment `bounding-box` mixin handles `margin`, `padding`, and `border` styles. I am going to change this to just `margin` and `padding` and create a new mixing to handle `border` and expanded it to support `outline` as the have similar CSS output.
 
 
-##### Requests?
-Contact [me](mailto:mark@alienresident.net) or simply file an issue!
+##### Requests? Feedback?
+Contact [me](mailto:mark@alienresident.net) or simply file an [issue](https://github.com/alienresident/compass-pattern-primer/issues/new)!
