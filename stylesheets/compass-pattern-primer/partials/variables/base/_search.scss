@@ -2,13 +2,11 @@
 $search-border-radius: 1em !default;
 $search-background-color: #fff !default;
 $search-padding: 0 0.75em !default;
-$search-border-pos: false !default; 
-$search-border-width: 1px !default; 
+$search-border-width: false !default; 
 $search-border-style: solid !default;
 $search-border-color: #ccc !default;
 //// Search Input
-$search-input-border-pos: none !default; 
-$search-input-border-width: 0 !default; 
+$search-input-border-width: false !default; 
 $search-input-border-style: solid !default;
 $search-input-border-color: #ccc !default;
 $search-input-border-radius: 0 !default;

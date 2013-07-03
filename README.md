@@ -182,8 +182,9 @@ I realized after the fact that all my reset's existed as compass gems. Doesn't s
 
 
 
-#### Simplify `bounding-box` mixin
-At the moment `bounding-box` mixin handles `margin`, `padding`, and `border` styles. I am going to change this to just `margin` and `padding` and create a new mixing to handle `border` and expanded it to support `outline` as the have similar CSS output.
+#### ~~Simplify `bounding-box` mixin~~ DONE
+~~At the moment `bounding-box` mixin handles `margin`, `padding`, and `border` styles. I am going to change this to just `margin` and `padding` and create a new mixing to handle `border` and expanded it to support `outline` as the have similar CSS output.~~  
+Refactored `bounding-box` mixin (v0.2.2). It's now 2 mixins: `border-outline` and `margin-padding`. They handle borders and outlines, and margins and paddings. With the refactoring I was able to remove all `$*-border-pos` variables. The position of borders is handled through `$*-border-width` which takes up to 4 arguments in the following  clockwise order TRBL \(Top Right Bottom Left \). Similarly `$*-border-style` and `$*-border-color` can take up to 4 arguments. Outline ignores all but the 1st argument and can take an offset argument. There's an error check mixin `border-outline-check` that displays warnings if you add too many arguments of try to offset the border. 
 
 
 ##### Requests? Feedback?

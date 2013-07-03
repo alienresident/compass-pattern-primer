@@ -8,8 +8,8 @@ select {
   width: 100%;
   font-family: inherit;
   font-size: inherit;
-  @include bounding-box(padding, $forms-padding);
-  @include bounding-box(border, false, $forms-border-pos, $forms-border-width, $forms-border-style, $forms-border-color);
+  @include margin-padding(padding, $forms-padding);
+  @include border-outline(border, $forms-border-width, $forms-border-style, $forms-border-color);
   @include border-radius($forms-border-radius);
   &:focus {
     border-color: $forms-focus-border-color;

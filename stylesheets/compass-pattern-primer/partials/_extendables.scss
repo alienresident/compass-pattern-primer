@@ -17,9 +17,9 @@
   font-size: inherit;
   font-weight: normal;
   font-style: normal;
-  @include bounding-box(border, false, $button-border-pos, $button-border-width, $button-border-style, $button-border-color);
+  @include border-outline(border, $button-border-width, $button-border-style, $button-border-color);
   cursor: pointer;
-  @include bounding-box(padding, $button-padding);
+  @include margin-padding(padding, $button-padding);
   line-height: 1;
   @include border-radius($button-border-radius);
 }
@@ -85,9 +85,9 @@
   font-family: $controls-font-family;
   display: inline-block;
   font-size: $controls-font-size;
-  @include bounding-box(padding, $controls-padding);
+  @include margin-padding(padding, $controls-padding);
   line-height: 1;
-  @include bounding-box(border, false, $controls-border-pos, $controls-border-width, $controls-border-style, $controls-border-color);
+  @include border-outline(border, $controls-border-width, $controls-border-style, $controls-border-color);
   @include border-radius($controls-border-radius);
   background-clip: padding-box;
   &:link,
@@ -105,11 +105,11 @@
 }
 
 %feedback {
-  @include bounding-box(padding, $feedback-padding);
-  @include bounding-box(margin, $feedback-margin);
+  @include margin-padding(padding, $feedback-padding);
+  @include margin-padding(margin, $feedback-margin);
   color: $feedback-color;
   background-color: $feedback-background;
-  @include bounding-box(border, false, $feedback-border-pos, $feedback-border-width, $feedback-border-style, $feedback-border-color);
+  @include border-outline(border, $feedback-border-width, $feedback-border-style, $feedback-border-color);
   @include border-radius($feedback-border-radius);
   background-clip: padding-box;
   a {
@@ -138,20 +138,20 @@
 
 %options {
   list-style: $options-list-style;
-  @include bounding-box(border, false, $options-border-pos, $options-border-width, $options-border-style, $options-border-color);
+  @include border-outline(border, $options-border-width, $options-border-style, $options-border-color);
   li {
     text-indent: $options-li-text-indent;
     font-family: $options-li-font-family;
     text-transform: $options-li-text-transform;
     letter-spacing: $options-li-letter-spacing;
     font-weight: $options-li-font-weight;
-    @include bounding-box(margin, $options-li-margin);
-    @include bounding-box(padding, $options-li-padding);
-    @include bounding-box(border, false, $options-li-border-pos, $options-li-border-width, $options-li-border-style, $options-li-border-color);
+    @include margin-padding(margin, $options-li-margin);
+    @include margin-padding(padding, $options-li-padding);
+    @include border-outline(border, $options-li-border-width, $options-li-border-style, $options-li-border-color);
   }
   a {
     display: block;
-    @include bounding-box(border, false, $options-a-border-pos, $options-a-border-width, $options-a-border-style, $options-a-border-color);
+    @include border-outline(border, $options-a-border-width, $options-a-border-style, $options-a-border-color);
   }
 }
 
@@ -159,15 +159,15 @@
   font-family: $pagination-font-family;
   li {
     display: $pagination-li-display;
-    @include bounding-box(margin, $pagination-li-margin, $pagination-li-margin-pos);
+    @include margin-padding(margin, $pagination-li-margin, $pagination-li-margin-pos);
     text-indent: $pagination-text-indent;
   }
   a {
     display: $pagination-a-display;
-    @include bounding-box(padding, $pagination-a-padding);
+    @include margin-padding(padding, $pagination-a-padding);
     line-height: $pagination-a-line-height;
-    @include bounding-box(margin, $pagination-a-margin);
-    @include bounding-box(border, false, $pagination-a-border-pos, $pagination-a-border-width, $pagination-a-border-style, $pagination-a-border-color);
+    @include margin-padding(margin, $pagination-a-margin);
+    @include border-outline(border, $pagination-a-border-width, $pagination-a-border-style, $pagination-a-border-color);
     @include border-radius($pagination-a-border-radius);
     background-clip: padding-box;
     &:link,

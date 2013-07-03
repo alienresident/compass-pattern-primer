@@ -5,14 +5,41 @@
   @include background-image(linear-gradient($background-gradient-pos, $background-gradient-1, $background-gradient-2));
 }
 
-@mixin bounding-box($type, $amount: false, $side: false, $color: false, $style: false, $width: false) {
-  @if $type == 'border' and $side == none {
-    #{$type}: $side;
-  } @else if $type == 'border' and $side {
-    #{$type}-#{$side}: $color $style $width;
-  } @else if $type == 'border' {
-    #{$type}: $color $style $width;
-  } @else  if $side {
+@mixin border-outline($type: border, $width: 1px, $style: solid, $color: #333, $offset: false) {
+  @include border-outline-check($type, $width, $style, $color, $offset);
+  
+  @if $width == 'none' {
+      #{$type}: $width;
+  } @else if $width == false {
+  } @else {
+    #{$type}: {
+      width: $width;
+      style: $style;
+      color: $color;
+      @if $type == 'outline' and $offset {
+        offset: $offset;
+      }
+    }
+  }
+}
+
+@mixin border-outline-check($type, $width, $style, $color, $offset) {
+  @if $type == 'border' and $offset {
+    @warn "#{$type} does not use offset";
+  }
+  @if $type == 'outline' { // wish this was cleaner! there's probably a better way to do this.
+    $widths: length($width);
+    $styles: length($style);
+    $colors: length($color);
+    $offsets: length($offset);
+    @if $widths > 1 or $styles > 1 or $colors > 1 or $offsets > 1   {
+       @warn "You cannot use mulitple values for #{$type} - only the first value will be used!";
+    }
+  }  
+}
+
+@mixin margin-padding($type, $amount: false, $side: false) {
+  @if $side {
     #{$type}-#{$side}: $amount;
   } @else {
     #{$type}: $amount;
@@ -132,7 +159,7 @@
   @if $lightness < 50% {
     $color: white;
   }
-
+  
   &:before, &:after {
     color: $color;
   }

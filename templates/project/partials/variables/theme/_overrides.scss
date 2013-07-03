@@ -12,37 +12,33 @@
 ///// body
 // $body-background-color: nth($black , 6);
 // $body-background-rgba: rgba($body-background-color, 1);
-// $body-border-width: 0;
-// $body-border-pos: none;
-// $body-border-pos2: none;
+// $body-border-width: false;
 //
 // $body-margin: 0;
 // $body-padding: 0;
 //
-// $html-border-pos: none;
+// $html-border-width: false;
 // $html-background-color: lighten($body-background-color, 10%);
 //
 // $link-color: nth($primary, 1);
 // $link-text-decoration: none;
-// $link-border-pos: none;
+// $link-border-width: false;
 //
 ///// Visited
 // $link-visited-link-color: nth($primary, 2);
-// $link-visited-border-pos: $link-border-pos;
+// $link-visited-border-width: $link-border-width;
 ///// Hover
 // $link-hover-link-color: lighten($link-color, 10%);
 // $link-text-decoration: none; 
-// $link-hover-border-pos: $link-border-pos;
+// $link-hover-border-width: $link-border-width;
 ///// Active
 // $link-active-link-color: $link-color;
 //
 //
 // $h1-margin-pos: none;
-// $h1-border-width: 0; 
-// $h2-border-pos: none; 
-// $h2-border-width: 0;
-// $h3-border-pos: none; 
-// $h3-border-width: 0; 
+// $h1-border-width: false;  
+// $h2-border-width: false; 
+// $h3-border-width: false; 
 //
 // $button-padding: 0.33em .66em;
 // $button-border-color: nth($black, 3);

@@ -1,11 +1,11 @@
 [role="search"] {
   position: relative;
   background-color: $search-background-color;
-  @include bounding-box(border, false, $search-border-pos, $search-border-width, $search-border-style, $search-border-color);
-  @include bounding-box(padding, $search-padding);
+  @include border-outline(border, $search-border-width, $search-border-style, $search-border-color);
+  @include margin-padding(padding, $search-padding);
   @include border-radius($search-border-radius);
   input[type="search"], input {
-    @include bounding-box(border, false, $search-input-border-pos, $search-input-border-width, $search-input-border-style, $search-input-border-color);
+    @include border-outline(border, $search-input-border-width, $search-input-border-style, $search-input-border-color);
     @include border-radius($search-input-border-radius);
   }
   input[type="image"] {
@@ -14,6 +14,6 @@
     width: $search-image-width;
     top: $search-image-top;
     right: $search-image-right;
-    @include bounding-box(padding, $search-image-padding);
+    @include margin-padding(padding, $search-image-padding);
   }
 }                                
