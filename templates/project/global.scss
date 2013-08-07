@@ -12,11 +12,24 @@
 
 @import "compass-pattern-primer/reset"; 
 
-@import "compass-pattern-primer/partials/"; 
+@import "compass-pattern-primer/partials/_mixins";
+@import "compass-pattern-primer/partials/_variables";
+@import "compass-pattern-primer/partials/_extendables";
+@import "compass-pattern-primer/partials/_functions";
+@import "compass-pattern-primer/partials/_colors"; // generates color scheme table on pattern-primer.html —- good for development but adds a lot of css.
 @import "partials/variables/theme/_overrides";
 
-@import "compass-pattern-primer/base";
-@import "compass-pattern-primer/modules";
+@import "compass-pattern-primer/base/_page";
+@import "compass-pattern-primer/base/_typography";
+@import "compass-pattern-primer/base/_links";
+@import "compass-pattern-primer/base/_forms";
+@import "compass-pattern-primer/base/_buttons";
+
+// optional module imports. comment out ones you don't use
+@import "compass-pattern-primer/modules/_control";
+@import "compass-pattern-primer/modules/_feedback";
+@import "compass-pattern-primer/modules/_options";
+@import "compass-pattern-primer/modules/_pagination";
 
 @import "base/_page";
 
