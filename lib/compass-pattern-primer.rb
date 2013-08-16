@@ -18,7 +18,7 @@ Compass::Frameworks.register('compass-pattern-primer', :path => extension_path)
 #    a prerelease version
 #  Date is in the form of YYYY-MM-DD
 module Compass_Pattern_Primer
-  VERSION = "0.2.5"
+  VERSION = "0.2.6"
   DATE = "2013-08-16"
 end
 

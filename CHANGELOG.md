@@ -5,3 +5,4 @@
 * **0.2.3** Fixed missing <html> tag on pattern-primer.html. Color scheme and modules are easier to opt out of in global.scss
 * **0.2.4** Added MIT GPL-3 Licenses — thanks to Benjamin Fleischer (https://github.com/bf4) for the prompting
 * **0.2.5** Fixed errors in time style in base/_tyopgraphy.scss
+* **0.2.6** Forgot to update Changelog
