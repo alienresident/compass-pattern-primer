@@ -125,8 +125,8 @@ time {
   font-family: $time-font-family;
   @include bold-italic-uppercase-variant($time-font-bold, $time-font-italic, $time-font-uppercase, $time-font-variant);
   @include type-size($time-font-size, $time-line-height);
-  $time-letter-spacing: 0.2em;
-  $time-color: #888;
+  letter-spacing: $time-letter-spacing;
+  color: $time-color;
   @include content-before-after($time-content);
 }
 
