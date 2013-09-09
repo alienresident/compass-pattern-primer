@@ -18,8 +18,8 @@ Compass::Frameworks.register('compass-pattern-primer', :path => extension_path)
 #    a prerelease version
 #  Date is in the form of YYYY-MM-DD
 module Compass_Pattern_Primer
-  VERSION = "0.2.6"
-  DATE = "2013-08-16"
+  VERSION = "0.2.7"
+  DATE = "2013-09-09"
 end
 
 # This is where any custom SassScript should be placed. The functions will be  

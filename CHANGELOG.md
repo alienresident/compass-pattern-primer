@@ -6,3 +6,4 @@
 * **0.2.4** Added MIT GPL-3 Licenses — thanks to Benjamin Fleischer (https://github.com/bf4) for the prompting
 * **0.2.5** Fixed errors in time style in base/_tyopgraphy.scss
 * **0.2.6** Forgot to update Changelog
+* **0.2.7** Added `$forms-input-width` variable

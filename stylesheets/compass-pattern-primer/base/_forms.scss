@@ -5,7 +5,7 @@ input[type],
 textarea,
 select {
   background-color: $forms-background-color;
-  width: 100%;
+  width: $forms-input-width;
   font-family: inherit;
   font-size: inherit;
   @include margin-padding(padding, $forms-padding);
