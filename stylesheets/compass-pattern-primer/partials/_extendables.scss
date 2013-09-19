@@ -9,7 +9,18 @@
   white-space: -hp-pre-wrap;
   word-wrap: break-word; 
 }
-
+%formstyle {
+  background-color: $forms-background-color;
+  width: $forms-input-width;
+  font-family: inherit;
+  font-size: inherit;
+  @include margin-padding(padding, $forms-padding);
+  @include border-outline(border, $forms-border-width, $forms-border-style, $forms-border-color);
+  @include border-radius($forms-border-radius);
+  &:focus {
+    border-color: $forms-focus-border-color;
+  }
+}
 %btn-all {
   width: auto;
   text-align: center;
