@@ -5,9 +5,9 @@ no_configuration_file!
 file 'config.rb', :like => :file, :to => "config.rb" 
 
 # Stylesheet Import
-file '../shared/sass/global.scss', :like => :stylesheet, :media => 'screen, projection'
+file '../shared/sass/global.scss', :like => :stylesheet, :to => 'global.scss'
 # Stylesheet Import
-file '../shared/sass/pattern-primer.scss', :like => :stylesheet, :media => 'screen, projection'
+file '../shared/sass/pattern-primer.scss', :like => :stylesheet, :to => 'pattern-primer.scss'
 
 # Partials
 file '../shared/sass/partials/_browsers.scss', :like => :stylesheet, :to => 'partials/_browsers.scss'
