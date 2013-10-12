@@ -127,7 +127,6 @@ The Compass Pattern Primer is designed to allow nearly everything about the CSS 
 #### Overrides 
 In the SMACSS style scaffolding you can override any of the variables in `partials/variables/theme/_overrides`. It contains some example variables that are commented out.
 
-
 #### Extendables
 Styles for the buttons, controls, options, and pagination are silent extendables. The extendables are in `partials/extendables`. This allows you to easily add a the button styles to another element.
 

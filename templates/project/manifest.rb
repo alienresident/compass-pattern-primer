@@ -2,6 +2,7 @@
 description "Compass Pattern Primer is based on Adactio/Jeremy Keith's Pattern Primer. It provides a scaffolding to create a basic style guide for any website."
 
 no_configuration_file!
+file 'config.rb', :like => :file, :to => "config.rb" 
 
 # Stylesheet Import
 file '../shared/sass/global.scss', :like => :stylesheet, :media => 'screen, projection'
