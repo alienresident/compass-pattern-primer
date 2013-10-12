@@ -1,0 +1,25 @@
+// import the global style sheet
+@import 'global';
+
+// Add the Color Guide (adds a lot of css not needed for production)
+@import 'toolkit/colours';  // tint-stack, shade-stack etc
+@import "singularitygs"; // require for generate-colour-guide mixin
+
+@include generate-colour-guide($black, $primary, $secondary, $tertiary, $quadrary);
+
+// Styling for the pattern-primer.php page
+.pattern {
+    clear: both;
+    overflow: hidden;
+}
+.pattern .display {
+    width: 65%;
+    float: left;
+}
+.pattern .source {
+    width: 30%;
+    float: right;
+}
+.pattern .source textarea {
+    width: 90%;
+}

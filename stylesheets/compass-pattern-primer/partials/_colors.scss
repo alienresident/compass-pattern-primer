@@ -23,7 +23,5 @@ $black:     tint-stack(#333);
 $primary:   tint-stack(cs-primary());
 $secondary: tint-stack(cs-secondary());
 $tertiary:  tint-stack(cs-tertiary());
-$quadrary:  tint-stack(cs-quadrary()); 
+$quadrary:  tint-stack(cs-quadrary());
 $darker:    shade-stack(cs-primary());
- 
-@include generate-colour-guide($black, $primary, $secondary, $tertiary, $quadrary, $darker);

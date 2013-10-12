@@ -42,40 +42,7 @@ file '../shared/sass/theme/_page.scss', :like => :stylesheet, :to => 'theme/_pag
 # file 'scripts.js', :like => :javascript, :to => 'scripts.js'
 
 # HTML Import
-file "../shared/patterns/blockquote.html" , :like => :html, :to => "patterns/blockquote.html"
-file "../shared/patterns/colorguide.html" , :like => :html, :to => "patterns/colorguide.html"
-file "../shared/patterns/feedback-error.html" , :like => :html, :to => "patterns/feedback-error.html"
-file "../shared/patterns/feedback-warning.html" , :like => :html, :to => "patterns/feedback-warning.html"
-file "../shared/patterns/feedback.html" , :like => :html, :to => "patterns/feedback.html"
-file "../shared/patterns/form-buttons-active.html" , :like => :html, :to => "patterns/form-buttons-active.html"
-file "../shared/patterns/form-buttons-all.html" , :like => :html, :to => "patterns/form-buttons-all.html"
-file "../shared/patterns/form-buttons-cancel.html" , :like => :html, :to => "patterns/form-buttons-cancel.html"
-file "../shared/patterns/form-buttons-disabled.html" , :like => :html, :to => "patterns/form-buttons-disabled.html"
-file "../shared/patterns/form-buttons.html" , :like => :html, :to => "patterns/form-buttons.html"
-file "../shared/patterns/form-checkbox.html" , :like => :html, :to => "patterns/form-checkbox.html"
-file "../shared/patterns/form-email.html" , :like => :html, :to => "patterns/form-email.html"
-file "../shared/patterns/form-number.html" , :like => :html, :to => "patterns/form-number.html"
-file "../shared/patterns/form-select.html" , :like => :html, :to => "patterns/form-select.html"
-file "../shared/patterns/form-text.html" , :like => :html, :to => "patterns/form-text.html"
-file "../shared/patterns/form-textarea.html" , :like => :html, :to => "patterns/form-textarea.html"
-file "../shared/patterns/form-url.html" , :like => :html, :to => "patterns/form-url.html"
-file "../shared/patterns/headers.html" , :like => :html, :to => "patterns/headers.html"
-file "../shared/patterns/heading-1-p.html" , :like => :html, :to => "patterns/heading-1-p.html"
-file "../shared/patterns/heading-2-p.html" , :like => :html, :to => "patterns/heading-2-p.html"
-file "../shared/patterns/heading-3-p.html" , :like => :html, :to => "patterns/heading-3-p.html"
-file "../shared/patterns/heading-4-p.html" , :like => :html, :to => "patterns/heading-4-p.html"
-file "../shared/patterns/heading-5-p.html" , :like => :html, :to => "patterns/heading-5-p.html"
-file "../shared/patterns/heading-6-p.html" , :like => :html, :to => "patterns/heading-6-p.html"
-file "../shared/patterns/list-ordered.html" , :like => :html, :to => "patterns/list-ordered.html"
-file "../shared/patterns/list-unordered.html" , :like => :html, :to => "patterns/list-unordered.html"
-file "../shared/patterns/pagination-first.html" , :like => :html, :to => "patterns/pagination-first.html"
-file "../shared/patterns/pagination-last.html" , :like => :html, :to => "patterns/pagination-last.html"
-file "../shared/patterns/pagination.html" , :like => :html, :to => "patterns/pagination.html"
-file "../shared/patterns/text.html" , :like => :html, :to => "patterns/text.html"
-
-# General File Import
-# file 'README.md', :to => "README.md"
-file "../shared/php/pattern-primer.php", :to => "pattern-primer.php"
+file 'pattern-primer.html', :like => :html, :to => "pattern-primer.html"
 
 # General File Import
 # file 'README.md', :to => "README.md"

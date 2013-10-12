@@ -1,0 +1,36 @@
+// Basic scaffolding
+
+@import "compass/typography";
+@import "compass/css3";
+
+@import "partials/_browsers";
+@import "partials/_colors";
+@import "partials/_extendables";
+@import "partials/_functions";
+@import "partials/_mixins";
+@import "partials/_variables";
+
+@import "compass-pattern-primer/reset"; 
+
+@import "compass-pattern-primer/partials/_mixins";
+@import "compass-pattern-primer/partials/_variables";
+@import "compass-pattern-primer/partials/_extendables";
+@import "compass-pattern-primer/partials/_functions";
+@import "compass-pattern-primer/partials/_colors"; // generates color scheme table on pattern-primer.html —- good for development but adds a lot of css.
+@import "partials/variables/_overrides";
+
+@import "compass-pattern-primer/base/_page";
+@import "compass-pattern-primer/base/_typography";
+@import "compass-pattern-primer/base/_links";
+@import "compass-pattern-primer/base/_forms";
+@import "compass-pattern-primer/base/_buttons";
+
+// optional module imports. comment out ones you don't use
+@import "compass-pattern-primer/modules/_control";
+@import "compass-pattern-primer/modules/_feedback";
+@import "compass-pattern-primer/modules/_options";
+@import "compass-pattern-primer/modules/_pagination";
+
+
+
+// some default styling for pattern-primer.html. Most likely you'll want to delete this.
