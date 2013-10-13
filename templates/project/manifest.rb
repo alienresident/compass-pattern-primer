@@ -76,7 +76,7 @@ file "../shared/patterns/text.html" , :like => :html, :to => "patterns/text.html
 
 # General File Import
 # file 'README.md', :to => "README.md"
-file "../shared/php/pattern-primer.php", :to => "pattern-primer.php"
+file "../shared/php/pattern-primer.php", :to => "index.php"
 
 # General File Import
 # file 'README.md', :to => "README.md"
@@ -90,6 +90,9 @@ help %Q{
 #  Users will see this when they create a new project using this template.
 welcome_message %Q{
   Welcome to Compass Pattern Primer!
+  
+  You have chosen to install the default version of Compass Pattern Primer. You'll find a PHP file index.php in your project. It pulls in   HTML snippets (patterns) from the patterns folder. They include the original Adactio patterns and new patterns. Feel free to add your own patterns here. The project version goes beyond Jeremy Keith's original CSS and uses a SMACSS organizing principle.
+  
   Documentation: https://github.com/alienresident/compass-pattern-primer
   Contact: mark@alienresident.net
 }
