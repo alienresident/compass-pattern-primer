@@ -91,7 +91,7 @@ help %Q{
 welcome_message %Q{
   Welcome to Compass Pattern Primer!
   
-  You have chosen to install the default version of Compass Pattern Primer. You'll find a PHP file index.php in your project. It pulls in   HTML snippets (patterns) from the patterns folder. They include the original Adactio patterns and new patterns. Feel free to add your own patterns here. The project version goes beyond Jeremy Keith's original CSS and uses a SMACSS organizing principle.
+  You have chosen to install the default version of Compass Pattern Primer. You'll find a PHP file index.php in your project. It pulls in HTML snippets (patterns) from the patterns folder. They include the original Adactio patterns and new patterns. Feel free to add your own patterns here. The project version goes beyond Jeremy Keith's original CSS and uses a SMACSS organizing principle.
   
   Documentation: https://github.com/alienresident/compass-pattern-primer
   Contact: mark@alienresident.net
