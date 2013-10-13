@@ -1,26 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <title>Pattern Primer</title>
 <link rel="stylesheet" href="css/pattern-primer.css">
-<style>
-.pattern {
-    clear: both;
-    overflow: hidden;
-}
-.pattern .display {
-    width: 65%;
-    float: left;
-}
-.pattern .source {
-    width: 30%;
-    float: right;
-}
-.pattern .source textarea {
-    width: 90%;
-}
-</style>
 </head>
 <body>
 
