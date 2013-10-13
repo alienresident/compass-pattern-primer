@@ -57,7 +57,7 @@ file "../shared/patterns/form-checkbox.html" , :like => :html, :to => "patterns/
 file "../shared/patterns/form-email.html" , :like => :html, :to => "patterns/form-email.html"
 file "../shared/patterns/form-number.html" , :like => :html, :to => "patterns/form-number.html"
 file "../shared/patterns/form-select.html" , :like => :html, :to => "patterns/form-select.html"
-file "../shared/patterns/form-text-new.html" , :like => :html, :to => "patterns/form-text.html"
+file "../shared/patterns/form-text.html" , :like => :html, :to => "patterns/form-text.html"
 file "../shared/patterns/form-textarea.html" , :like => :html, :to => "patterns/form-textarea.html"
 file "../shared/patterns/form-url.html" , :like => :html, :to => "patterns/form-url.html"
 file "../shared/patterns/headers.html" , :like => :html, :to => "patterns/headers.html"
@@ -72,7 +72,7 @@ file "../shared/patterns/list-unordered.html" , :like => :html, :to => "patterns
 file "../shared/patterns/pagination-first.html" , :like => :html, :to => "patterns/pagination-first.html"
 file "../shared/patterns/pagination-last.html" , :like => :html, :to => "patterns/pagination-last.html"
 file "../shared/patterns/pagination.html" , :like => :html, :to => "patterns/pagination.html"
-file "../shared/patterns/text.html" , :like => :html, :to => "patterns/text.html"
+file "../shared/patterns/text-new.html" , :like => :html, :to => "patterns/text.html"
 
 # General File Import
 # file 'README.md', :to => "README.md"
