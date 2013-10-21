@@ -7,7 +7,6 @@
 
 @mixin border-outline($type: border, $width: 1px, $style: solid, $color: #333, $offset: false) {
   @include border-outline-check($type, $width, $style, $color, $offset);
-  
   @if $width == 'none' {
       #{$type}: $width;
   } @else if $width == false {
