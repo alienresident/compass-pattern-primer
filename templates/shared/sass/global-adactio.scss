@@ -1,41 +1,64 @@
-// Basic scaffolding
-
+// Adactio scaffolding
 @import "compass/typography";
 @import "compass/css3";
 
 @import "partials/_browsers";
-@import "partials/_colors";
 @import "partials/_extendables";
 @import "partials/_functions";
 @import "partials/_mixins";
-@import "partials/_variables";
 
 // Eric Meyer Reset used by Adactio's Pattern Primer
+/* @group Reset */
+
+/* Based on http://meyerweb.com/eric/tools/css/reset/ */
 @import "compass-pattern-primer/reset/libraries/_eric_meyer_reset";
 // 
 // Optional Resets include
 //  @import "compass-pattern-primer/reset/libraries/_normalize";
 //  @import "compass-pattern-primer/reset/libraries/_formalize";
+/* @end Reset */  
 
 @import "compass-pattern-primer/partials/_mixins";
-@import "compass-pattern-primer/partials/_variables";
 @import "compass-pattern-primer/partials/_extendables";
 @import "compass-pattern-primer/partials/_functions";
-@import "compass-pattern-primer/partials/_colors"; 
 
-@import "partials/variables/_overrides";
+@import "_config";
 
-@import "compass-pattern-primer/base/_page";
-@import "compass-pattern-primer/base/_typography";
-@import "compass-pattern-primer/base/_links";
-@import "compass-pattern-primer/base/_forms";
-@import "compass-pattern-primer/base/_buttons";
+/* @group Typography */ 
+@import "page/_page";
+@import "colors/_colors";
+@import "typography/_typography";
+/* @end Typography */
 
-@import "compass-pattern-primer/modules/_control";
-@import "compass-pattern-primer/modules/_feedback";
-@import "compass-pattern-primer/modules/_options";
-@import "compass-pattern-primer/modules/_pagination";
+/* @group Links */
+@import "links/_links";
+/* @end Links */
 
+/* @group Forms */
+@import "forms/_forms";
+@import "buttons/_buttons";
+/* @group search */ 
+@import "search/_search";
+/* @end search */
 
+/* @end Forms */
 
-// some default styling for pattern-primer.html. Most likely you'll want to delete this.
+/* @group Classes */
+
+/* @group pagination */  
+@import "pagination/_pagination";
+/* @end pagination*/
+
+/* @group control */
+@import "controls/_controls";
+/* @end control */
+
+/* @group feedback */
+@import "feedback/_feedback";
+/* @end feedback */
+
+/* @group options */
+@import "options/_options";
+/* @end options*/
+
+/* @end Classes */
