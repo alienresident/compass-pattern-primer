@@ -4,44 +4,33 @@
 @import "compass/css3";
 
 @import "partials/_browsers";
-@import "partials/_colors";
 @import "partials/_extendables";
 @import "partials/_functions";
 @import "partials/_mixins";
-@import "partials/_variables";
 
 @import "compass-pattern-primer/reset"; 
 
 @import "compass-pattern-primer/partials/_mixins";
-@import "compass-pattern-primer/partials/_variables";
 @import "compass-pattern-primer/partials/_extendables";
 @import "compass-pattern-primer/partials/_functions";
-@import "compass-pattern-primer/partials/_colors";
 
-@import "partials/variables/theme/_overrides";
+@import "_config";
 
-@import "compass-pattern-primer/base/_page";
-@import "compass-pattern-primer/base/_typography";
-@import "compass-pattern-primer/base/_links";
-@import "compass-pattern-primer/base/_forms";
-@import "compass-pattern-primer/base/_buttons";
+@import "base/page/_page";
+@import "base/typography/_typography";
+@import "base/links/_links";
+@import "base/forms/_forms";
+@import "base/buttons/_buttons";
+@import "base/search/_search";
 
 // optional module imports. comment out ones you don't use
-@import "compass-pattern-primer/modules/_control";
-@import "compass-pattern-primer/modules/_feedback";
-@import "compass-pattern-primer/modules/_options";
-@import "compass-pattern-primer/modules/_pagination";
+@import "modules/pagination/_pagination";
+@import "modules/controls/_controls";
+@import "modules/feedback/_feedback";
+@import "modules/options/_options";
 
-@import "base/_page";
+@import "layout/page/_page";  // Sample file
 
-@import "modules/_header";
-@import "modules/_footer";
+@import "state/header/_header";  // Sample file
 
-@import "layout/_page";
-
-@import "state/_page";
-@import "state/_header";
-@import "state/_footer";
-
-@import "theme/_page";
-@import "modules/_footer";
+@import "theme/page/_page";  // Sample file
