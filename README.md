@@ -6,14 +6,14 @@ Compass Pattern Primer is a system to quickly generate style guides for your web
 
 I originally faithfully ported [Pattern Primer](https://github.com/alienresident/Pattern-Primer) and Jeremy Keith's styles to Sass. Using Sass allows the styles to be quickly changing by overriding a few variables. 
 
-For my own development work I needed to move beyond Jeremy's work. I reworked the Pattern Primer to use Jonathan Snook's [SMACSS](http://smacss.com/) \(Scalable and Modular Architecture for CSS\) as an organizing principle. I separated the partials into base and modules. The styling from the original Pattern Primer is the default style. The intended way to override the original Adactio styling is to change the variables in `partials/variables/theme/_overrides` following the SMACSS paradigm. I have also changed the default [reset](#reset) from Eric Meyer's to Formalize and Normalize.
+For my own development work I needed to move beyond Jeremy's work. I reworked the Pattern Primer to use Jonathan Snook's [SMACSS](http://smacss.com/) \(Scalable and Modular Architecture for CSS\) as an organizing principle. I separated the partials into base and modules. The styling from the original Pattern Primer is the default style. The intended way to override the original Adactio styling is to change the variables in `_config` following the SMACSS paradigm. I have also changed the default [reset](#reset) from Eric Meyer's to Formalize and Normalize.
 
 *This is a work in progress and any feedback is very welcome.* 
 
 ## Installation
 Compass Pattern Primer is a compass extension bundled as a Ruby gem.
    
-```bash
+```bash  
 gem install compass-pattern-primer
 ``` 
 #### Dependencies  
@@ -23,13 +23,6 @@ Depending on what [scaffolding](#create-a-new-compass-project-using-compass-patt
 
 ## How to Use it
 There are a number of ways you can get started with Compass Pattern Primer
-
-### Create a new Compass project requiring Compass Pattern Primer
- 
-```bash
-compass create <MyProject> -r compass-pattern-primer 
-```
-This creates a new Compass project using the compass standard scaffolding and adds `require 'compass-pattern-primer'` to the `config.rb`.
   
 ### Create a new Compass project using Compass Pattern Primer scaffolding
 
@@ -44,7 +37,7 @@ This creates a SMACSS style scaffolding for your project. It includes an `index.
 
 ```bash
 compass create <MyProject> -r compass-pattern-primer -u compass-pattern-primer/adactio 
-```   
+```      
 This adds an `index.php` and a patterns folder (HTML snippets) with only  Adactio's original patterns and CSS that's (fairly) faithful to his CSS.
 
 ##### Static HTML File
@@ -53,6 +46,13 @@ This adds an `index.php` and a patterns folder (HTML snippets) with only  Adacti
 compass create <MyProject> -r compass-pattern-primer -u compass-pattern-primer/static 
 ```   
 This creates a SMACSS style scaffolding for your project. Instead of the `index.php` it includes `pattern-primer.html` a static html page where you can preview the style guide. You edit the html to add your own patterns.
+
+### Create a new Compass project requiring Compass Pattern Primer
+ 
+```bash
+compass create <MyProject> -r compass-pattern-primer 
+```
+This creates a new Compass project using the compass standard scaffolding and adds `require 'compass-pattern-primer'` to the `config.rb`. However you won't get the base styles or pattern primer viewing page added to your project. __NOT__ recommended.
 
 #### Add Compass Pattern Primer to an existing project by adding the following to config.rb
 
@@ -72,12 +72,10 @@ Compass Pattern Primer comes with a reset, base styles, and modules \(controls, 
 
 ```scss   
 @import "compass-pattern-primer/reset";   
-@import "compass-pattern-primer/base";   
-@import "compass-pattern-primer/modules";   
 ```   
 
 ### Reset
-The Compass Pattern Primer Reset incorporates Normalize and Formalize libraries (using their compass gems) by default.
+The Compass Pattern Primer Reset incorporates Normalize and Formalize libraries (using their compass gems) by default. If you just want to use one of these libraries.
 
 __change__
 
@@ -115,12 +113,7 @@ $legacy-support-for-ie7: false;
 
 *In the Compass Pattern Primer SMACSS scaffolding you can change what browsers you support in `partials/browsers`.
 
-If you don't want to use any resets simply don't import it. You can import just the base and modules.
-
-```scss
-@import "compass-pattern-primer/base";
-@import "compass-pattern-primer/modules";
-```
+If you don't want to use any resets simply don't import it. 
 
 ### Base
 The Compass Pattern Primer Base contains partials for your base styles.
