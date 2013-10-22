@@ -67,7 +67,7 @@
 //
 // $button-action-hover-gradient-stop-1: nth($primary, 1);
 // $button-action-hover-gradient-stop-2: nth($primary, 2);
-// $button-action-active-gradient-stop-1: nth($darker, 2);
+// $button-action-active-gradient-stop-1: darken(nth($primary, 1), 20%);
 // $button-action-active-gradient-stop-2: nth($primary, 1);
 //
 // $forms-input-width: auto;
