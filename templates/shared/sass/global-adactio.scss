@@ -6,6 +6,7 @@
 @import "partials/_extendables";
 @import "partials/_functions";
 @import "partials/_mixins";
+@import "partials/_colors";
 
 // Eric Meyer Reset used by Adactio's Pattern Primer
 /* @group Reset */
@@ -26,7 +27,6 @@
 
 /* @group Typography */ 
 @import "page/_page";
-@import "colors/_colors";
 @import "typography/_typography";
 /* @end Typography */
 
