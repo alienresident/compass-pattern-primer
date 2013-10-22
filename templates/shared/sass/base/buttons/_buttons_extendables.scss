@@ -69,6 +69,7 @@
   &:hover,
   &:focus,
   &:active {
+    @include text-shadow($button-disabled-text-shadow);
     @extend %button-disabled;
   } 
 }
