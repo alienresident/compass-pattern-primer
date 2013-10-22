@@ -11,10 +11,10 @@ file '../shared/sass/pattern-primer.scss', :like => :stylesheet, :to => 'pattern
 
 # Partials
 file '../shared/sass/partials/_browsers.scss', :like => :stylesheet, :to => 'partials/_browsers.scss'
-file '../shared/sass/partials/_colors.scss', :like => :stylesheet, :to => 'partials/_colors.scss'
 file '../shared/sass/partials/_extendables.scss', :like => :stylesheet, :to => 'partials/_extendables.scss'
 file '../shared/sass/partials/_functions.scss', :like => :stylesheet, :to => 'partials/_functions.scss'
 file '../shared/sass/partials/_mixins.scss', :like => :stylesheet, :to => 'partials/_mixins.scss'
+file '../shared/sass/partials/_colors.scss', :like => :stylesheet, :to => 'partials/_colors.scss'
 file '../shared/sass/_config.scss', :like => :stylesheet, :to => '_config.scss'
 
 
@@ -22,8 +22,6 @@ file '../shared/sass/_config.scss', :like => :stylesheet, :to => '_config.scss'
 file '../shared/sass/base/buttons/_buttons.scss' , :like => :stylesheet, :to => 'base/buttons/_buttons.scss'
 file '../shared/sass/base/buttons/_buttons_extendables.scss' , :like => :stylesheet, :to => 'base/buttons/_buttons_extendables.scss'
 file '../shared/sass/base/buttons/_buttons_variables.scss' , :like => :stylesheet, :to => 'base/buttons/_buttons_variables.scss'
-file '../shared/sass/base/colors/_color_variables.scss' , :like => :stylesheet, :to => 'base/colors/_color_variables.scss'
-file '../shared/sass/base/colors/_colors.scss' , :like => :stylesheet, :to => 'base/colors/_colors.scss'
 file '../shared/sass/base/forms/_forms.scss' , :like => :stylesheet, :to => 'base/forms/_forms.scss'
 file '../shared/sass/base/forms/_forms_extendables.scss' , :like => :stylesheet, :to => 'base/forms/_forms_extendables.scss'
 file '../shared/sass/base/forms/_forms_variables.scss' , :like => :stylesheet, :to => 'base/forms/_forms_variables.scss'
