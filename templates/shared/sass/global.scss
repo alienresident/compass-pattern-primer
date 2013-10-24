@@ -9,11 +9,7 @@
 @import "partials/_mixins";
 @import "partials/_colors";
 
-@import "compass-pattern-primer/reset";
-
-@import "compass-pattern-primer/partials/_mixins";
-@import "compass-pattern-primer/partials/_extendables";
-@import "compass-pattern-primer/partials/_functions";
+@import "compass-pattern-primer";
 
 @import "_config";
 
@@ -24,7 +20,7 @@
 @import "base/buttons/_buttons";
 @import "base/search/_search";
 
-// optional module imports. comment out ones you don't use
+// optional module imports. Comment out or remove ones you don't use
 @import "modules/pagination/_pagination";
 @import "modules/controls/_controls";
 @import "modules/feedback/_feedback";
