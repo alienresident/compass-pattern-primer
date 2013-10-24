@@ -142,42 +142,39 @@ __Adactio Scaffold__
 The styles will be in your `sass` folder
 
 ```bash
-	sass/
-		buttons/
-		forms/
-		links/
-		page/
-		search/
-		typography/ 
+sass/
+	buttons/
+	forms/
+	links/
+	page/
+	search/
+	typography/ 
 ```
 
 ### Modules
 Similarly the modules are in different folders depending on your scaffolding setup.
 
 __SMACSS Scaffold__  
-The styles will be in your `sass/base` folder   
-```
+The styles will be in your `sass/modules` folder  
+
+```bash   
 sass/   
-	base/   
-		buttons/
-		forms/
-		links/
-		page/
-		search/
-		typography/ 
+	modules/   
+		controls/
+		feedback/
+		options/
+		pagination/
  ```
     
 __Adactio Scaffold__   
 The styles will be in your `sass` folder
 
 ```bash
-	sass/
-		buttons/
-		forms/
-		links/
-		page/
-		search/
-		typography/ 
+sass/
+	controls/
+	feedback/
+	options/
+	pagination/
 ```
 Each base and module folder will have a `_basename.scss` and a `_basename_variables.scss` file. It may also have a `_basename_mixins.scss` and a `_basename_extendables.scss`
 
