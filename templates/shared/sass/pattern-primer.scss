@@ -24,3 +24,13 @@
 .pattern .source textarea {
     width: 90%;
 }
+// Table of Contents
+ul.toc {
+  @include no-bullets;
+}
+h3 {
+  a.toc.link {
+    float: right;
+    font-size: .75em;
+  }
+} 
