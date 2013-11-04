@@ -83,6 +83,7 @@ file "../shared/patterns/pagination-first.html" , :like => :html, :to => "patter
 file "../shared/patterns/pagination-last.html" , :like => :html, :to => "patterns/03_pagination-last.html"
 file "../shared/patterns/pagination.html" , :like => :html, :to => "patterns/03_pagination.html"
 file "../shared/patterns/text-new.html" , :like => :html, :to => "patterns/01_text.html"
+file "../shared/patterns/00_a_header_toc.html" , :like => :html, :to => "patterns/00_a_header_toc.html"
 file "../shared/patterns/01_a_header.html" , :like => :html, :to => "patterns/01_a_header.html"
 file "../shared/patterns/02_a_header.html" , :like => :html, :to => "patterns/02_a_header.html"
 file "../shared/patterns/03_a_header.html" , :like => :html, :to => "patterns/03_a_header.html"

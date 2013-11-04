@@ -73,6 +73,13 @@ hr {
 p, ul, ol, hr, table, form, fieldset {
   @include margin-padding(margin, $element-margin);
 }
+// removed by Meyer reset! why?
+ol {
+  list-style-type: decimal;
+}
+ul {
+  list-style-type: disc;
+}
 li {
   list-style-position: $li-list-style-position;
   @include margin-padding(margin, $li-margin, $li-margin-pos);

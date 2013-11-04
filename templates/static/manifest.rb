@@ -52,7 +52,7 @@ file '../shared/sass/theme/page/_page.scss', :like => :stylesheet, :to => 'theme
 # file 'scripts.js', :like => :javascript, :to => 'scripts.js'
 
 # HTML Import
-file 'pattern-primer.html', :like => :html, :to => "pattern-primer.html"
+file 'pattern-primer.html', :like => :html, :to => "index.html"
 
 # General File Import
 # file 'README.md', :to => "README.md"
