@@ -26,10 +26,12 @@
     &[href]:focus {
       color: $pagination-link-hover-color;
       background-color: $pagination-link-hover-background-color;
+      @include border-outline(border, $pagination-a-border-width, $pagination-a-border-style, $pagination-a-border-color);
     }
     &:active {
       color: $pagination-link-active-color;
       background-color: $pagination-link-active-background-color;
+      @include border-outline(border, $pagination-a-border-width, $pagination-a-border-style, $pagination-a-border-color);
     }
   }
 }
