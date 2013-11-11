@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   # Description of your extension
   s.description = %q{A Compass extension to help create style guides}
   # A summary of your Compass extension. Should be different than Description
-  s.summary = %q{An easy to use system to build a website's styleguide. It's based off of Jeremy Keith's Pattern Primer.}
+  s.summary = %q{An easy to use system to build a website's styleguide. It's based off of Jeremy Keith's (Adactio) Pattern Primer.}
   # The names of the author(s) of the extension.
   # If more than one author, comma separate inside of the brackets
   s.authors = ["Mark Reilly"]
