@@ -1,10 +1,1 @@
-// change legacy support to true if you want legacy versions of formalize and normalize
-$legacy-support-for-ie6: false;
-$legacy-support-for-ie7: false;
-
-// choose your reset
-$use_eric_meyer_reset: false;
-$use_formalize_reset: true;
-$use_normalize_reset: true;
-
 @import "reset/_reset";  

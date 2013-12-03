@@ -15,7 +15,7 @@ Gem::Specification.new do |s|
   # Description of your extension
   s.description = %q{A Compass extension to help create style guides}
   # A summary of your Compass extension. Should be different than Description
-  s.summary = %q{An easy to use system to build a website's styleguide. It's based off of Jeremy Keith's Pattern Primer.}
+  s.summary = %q{An easy to use system to build a website's styleguide. It's based off of Jeremy Keith's (Adactio) Pattern Primer.}
   # The names of the author(s) of the extension.
   # If more than one author, comma separate inside of the brackets
   s.authors = ["Mark Reilly"]
@@ -54,8 +54,11 @@ Gem::Specification.new do |s|
   # These are Gem dependencies, not Compass dependencies. Including gems
   #  here will make sure the relevant gem and version are installed on the
   #  user's system when installing your gem.
-  s.add_dependency("sass",      [">=3.2.9"])
-  s.add_dependency("compass",   [">= 0.12.2"])
-  s.add_dependency("toolkit",   [">= 1.3.5"])
+  s.add_dependency("sass",      ["=3.2.12"])
+  s.add_dependency("compass",   ["= 0.12.2"])
+  s.add_dependency("toolkit",   ["= 1.3.5"])
+  s.add_dependency("compass_formalize",   ["= 0.0.5"])
+  s.add_dependency("compass-normalize",   ["= 1.4.3"])
+  s.add_dependency("meyer-reset",   ["= 2.0.0"])
   s.licenses = ['MIT', 'GPL-3']
 end

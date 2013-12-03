@@ -1,19 +1,2 @@
-$use_eric_meyer_reset: false !default;
-$use_formalize_reset: true !default;
-$use_normalize_reset: true !default;
-
-@import "libraries/_eric_meyer_reset";
-@import "libraries/_normalize";
-@import "libraries/_formalize";
-
-@if $use_eric_meyer_reset {
-   @include eric_meyer_reset();
-}
-
-@if $use_formalize_reset {
-   @include formalize();
-}
-
-@if $use_normalize_reset {
-   @include normalize();
-}
+@import "normalize";
+@import "formalize";
