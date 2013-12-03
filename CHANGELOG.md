@@ -9,4 +9,6 @@
 * **0.2.7** Added `$forms-input-width` variable
 * **0.2.8** Added `%formstyle` extendable to fix extendable cascade issues 
 * **0.3.beta** Remodeling reset and template files (pre-release for SassConf)
-* **0.4.beta** Moved base and modules from stylesheet folder to template files
+* **0.4** Moved base and modules from stylesheets folder to template files
+* **0.4.1** Moved remaining functions, extendables, and mixins from stylesheets folder to template files
+* **0.4.2** Fixed typo and dependencies
