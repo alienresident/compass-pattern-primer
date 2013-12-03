@@ -12,3 +12,4 @@
 * **0.4** Moved base and modules from stylesheets folder to template files
 * **0.4.1** Moved remaining functions, extendables, and mixins from stylesheets folder to template files
 * **0.4.2** Fixed typo and dependencies
+* **0.4.3** Tweaked dependencies
