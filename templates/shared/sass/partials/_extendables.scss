@@ -24,19 +24,6 @@
   @include hyphens(auto);
 }
 
-%group {
-  // http://css-tricks.com/snippets/css/clear-fix/
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-    // For IE 6/7 (trigger hasLayout) 
-    zoom: 1; 
-  }
-}
-
 // reworking of compass @include force-wrap
 %force-wrap {
   //@include force-wrap; // this is the output 
