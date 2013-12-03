@@ -54,11 +54,11 @@ Gem::Specification.new do |s|
   # These are Gem dependencies, not Compass dependencies. Including gems
   #  here will make sure the relevant gem and version are installed on the
   #  user's system when installing your gem.
-  s.add_dependency("sass",      [">=3.2.9"])
-  s.add_dependency("compass",   [">= 0.12.2"])
-  s.add_dependency("toolkit",   [">= 1.3.5"])
-  s.add_dependency("compass_formalize",   [">= 0.0.5"])
-  s.add_dependency("compass-normalize",   [">= 1.4.3"])
-  s.add_dependency("meyer-reset",   [">= 2.0.0"])
+  s.add_dependency("sass",      ["=3.2.12"])
+  s.add_dependency("compass",   ["= 0.12.2"])
+  s.add_dependency("toolkit",   ["= 1.3.5"])
+  s.add_dependency("compass_formalize",   ["= 0.0.5"])
+  s.add_dependency("compass-normalize",   ["= 1.4.3"])
+  s.add_dependency("meyer-reset",   ["= 2.0.0"])
   s.licenses = ['MIT', 'GPL-3']
 end
