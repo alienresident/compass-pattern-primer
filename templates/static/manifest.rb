@@ -67,7 +67,7 @@ help %Q{
 welcome_message %Q{
   Welcome to Compass Pattern Primer!
   
-  You have chosen to install the static HTML version. You'll find a HTML file pattern-primer.html in your project that includes the default patterns. Feel free to edit the HTML to include your own patterns.
+  You have chosen to install the static HTML version. You'll find a HTML file index.html in your project that includes the default patterns. Feel free to edit the HTML to include your own patterns.
   
   Documentation: https://github.com/alienresident/compass-pattern-primer
   Contact: mark@alienresident.net
