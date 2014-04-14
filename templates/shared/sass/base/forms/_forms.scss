@@ -17,6 +17,9 @@ input[type="checkbox"],
 input[type="radio"],
 input[type="image"] {
   width: auto;
+  @if $legacy-support-for-ie8 {
+    background: transparent;
+  }
 }
 input[required],
 textarea[required] {
