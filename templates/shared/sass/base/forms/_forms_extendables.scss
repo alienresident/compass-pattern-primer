@@ -7,7 +7,6 @@
   width: $forms-input-width;
   font-family: inherit;
   font-size: inherit;
-  @include margin-padding(padding, $forms-padding);
   @include border-outline(border, $forms-border-width, $forms-border-style, $forms-border-color);
   @include border-radius($forms-border-radius);
   &:focus {

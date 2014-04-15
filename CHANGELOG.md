@@ -13,3 +13,4 @@
 * **0.4.1** Moved remaining functions, extendables, and mixins from stylesheets folder to template files
 * **0.4.2** Fixed typo and dependencies
 * **0.4.3** Tweaked dependencies
+* **0.4.4** Fixed fallback background color for old IE buttons; Removed padding from %formstyle extendable; Removed white background from old IE checkboxes.  
