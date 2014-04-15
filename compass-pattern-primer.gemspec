@@ -59,6 +59,6 @@ Gem::Specification.new do |s|
   s.add_dependency("toolkit",   ["~> 1.3.5"])
   s.add_dependency("compass_formalize",   ["~> 0.0.5"])
   s.add_dependency("compass-normalize",   ["~> 1.4.3"])
-  s.add_dependency("meyer-reset",   ["~> 2.0.0"])
+  s.add_dependency("meyer-reset",   ["~> 2.0"])
   s.licenses = ['MIT', 'GPL-3']
 end
