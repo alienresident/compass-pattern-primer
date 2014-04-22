@@ -13,6 +13,7 @@ h1 {
   color: $h1-color;
   @include border-outline(border, $h1-border-width, $h1-border-style, $h1-border-color);
 }
+
 h2 {
   font-family: $header-font-family;
   @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
@@ -22,6 +23,7 @@ h2 {
   color: $h2-color;
   @include border-outline(border, $h2-border-width, $h2-border-style, $h2-border-color);
 }
+
 h3 {
   font-family: $header-font-family;
   @include bold-italic-uppercase-variant($h3-font-bold, $h3-font-italic, $h3-font-uppercase, $h3-font-variant);
@@ -31,6 +33,7 @@ h3 {
   color: $h3-color;
   @include border-outline(border, $h3-border-width, $h3-border-style, $h3-border-color);
 }
+
 h4 {
   font-family: $header-font-family;
   @include bold-italic-uppercase-variant($h4-font-bold, $h4-font-italic, $h4-font-uppercase, $h4-font-variant);
@@ -40,6 +43,7 @@ h4 {
   color: $h4-color;
   @include border-outline(border, $h4-border-width, $h4-border-style, $h4-border-color);
 }
+
 h5 {
   font-family: $header-font-family;
   @include bold-italic-uppercase-variant($h5-font-bold, $h5-font-italic, $h5-font-uppercase, $h5-font-variant);
@@ -49,6 +53,7 @@ h5 {
   color: $h5-color;
   @include border-outline(border, $h5-border-width, $h5-border-style, $h5-border-color);
 }
+
 h6 {
   font-family: $header-font-family;
   @include bold-italic-uppercase-variant($h6-font-bold, $h6-font-italic, $h6-font-uppercase, $h6-font-variant);
@@ -58,33 +63,49 @@ h6 {
   color: $h6-color;
   @include border-outline(border, $h6-border-width, $h6-border-style, $h6-border-color);
 }
-b, strong {
+
+b, 
+strong {
   font-weight: bold;
 }
-i, em {
+
+i, 
+em {
   font-style: italic;
 }
+
 hr {
   @include border-outline(border, $hr-border-width, $hr-border-style, $hr-border-color);
   height: $hr-height;
   background: $hr-background;
   background-color: $hr-background-rgba;
 }
-p, ul, ol, hr, table, form, fieldset {
+
+p, 
+ul, 
+ol, 
+hr, 
+table, 
+form, 
+fieldset {
   @include margin-padding(margin, $element-margin);
 }
+
 // removed by Meyer reset! why?
 ol {
   list-style-type: decimal;
 }
+
 ul {
   list-style-type: disc;
 }
+
 li {
   list-style-position: $li-list-style-position;
   @include margin-padding(margin, $li-margin, $li-margin-pos);
   text-indent: $li-text-indent;
 }
+
 blockquote {
   @include margin-padding(margin, $blockquote-margin);
   @include border-outline(border, $blockquote-border-width, $blockquote-border-style, $blockquote-border-color);
@@ -96,10 +117,12 @@ blockquote {
   color: $blockquote-color;
   border-color: $blockquote-border-rgba;
   @include border-radius($blockquote-border-radius);
+  
   em {
     @include bold-italic-uppercase-variant($blockquote-em-font-bold, $blockquote-em-font-italic, $blockquote-em-font-uppercase, $blockquote-em-font-variant);
   }
 }
+
 figcaption {
   font-family: $figcaption-font-family;
   @include bold-italic-uppercase-variant($figcaption-font-bold, $figcaption-font-italic, $figcaption-font-uppercase, $figcaption-font-variant);
@@ -118,6 +141,7 @@ article section > p {
   text-align: justify;
 */
 }
+
 article footer+p:first-letter,
 article section>h2+p:first-letter,
 article section>p:first-child:first-letter,
@@ -132,6 +156,7 @@ h1+p:first-letter {
   color: $article-fl-color;
   @include border-outline(border, $article-fl-border-width, $article-fl-border-style, $article-fl-border-color);
 }
+
 time {
   display: $time-display;
   text-align: $time-text-align;
@@ -141,15 +166,4 @@ time {
   letter-spacing: $time-letter-spacing;
   color: $time-color;
   @include content-before-after($time-content);
-}
-
-pre {
-  @extend %force-wrap;
-  @include margin-padding(margin, $pre-margin, $pre-margin-pos);
-  @include margin-padding(padding, $pre-padding);
-  @include border-outline(border, $pre-border-width, $pre-border-style, $pre-border-color);
-  @include border-radius($pre-border-radius);
-  font-family: $pre-font-family;
-  @include type-size($pre-font-size, $pre-line-height);
-  @include simple-background-gradient($pre-color, $pre-gradient-pos, $pre-gradient-stop-1, $pre-gradient-stop-2);
 }

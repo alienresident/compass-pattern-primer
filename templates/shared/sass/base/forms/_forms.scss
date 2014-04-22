@@ -7,20 +7,37 @@
 
 label {
   cursor: pointer;
+  display: block;
 }
+
 input[type],
 textarea,
 select {
   @extend %formstyle;
 }
+
 input[type="checkbox"],
 input[type="radio"],
 input[type="image"] {
-  width: auto;
+  margin: .5em .25em 0 0;
   @if $legacy-support-for-ie8 {
     background: transparent;
   }
+  
+  + label {
+    display: inline-block;
+    margin-right: 1em;
+  }
+  // for accessibility
+  &:focus + label {
+    background: $forms-label-focus-background-color;
+  }
+  
+  &[disabled] + label {
+    color: #888;
+  }
 }
+
 input[required],
 textarea[required] {
   border-color: $forms-required-border-color;
