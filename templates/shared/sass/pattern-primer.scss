@@ -5,32 +5,5 @@
 @import 'toolkit/colours';  // tint-stack, shade-stack etc
 @import "singularitygs"; // require for generate-colour-guide mixin
 
-@include generate-colour-guide($black, $primary, $secondary, $tertiary, $quadrary);
-
-// Styling for the index.php page
-.pattern {
-    clear: both;
-    overflow: hidden;
-    padding: 0 1em;
-}
-.pattern .display {
-    width: 65%;
-    float: left;
-}
-.pattern .source {
-    width: 30%;
-    float: right;
-}
-.pattern .source textarea {
-    width: 90%;
-}
-// Table of Contents
-ul.toc {
-  @include no-bullets;
-}
-h3 {
-  a.toc.link {
-    float: right;
-    font-size: .75em;
-  }
-} 
+@import "modules/colorguide/_colorguide";
+@import "modules/styleguide/_styleguide";

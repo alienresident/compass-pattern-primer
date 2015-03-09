@@ -1,0 +1,15 @@
+//////////////////////////////
+// MODULES: Styles that are layout independent 
+//////////////////////////////
+
+// Styling for the pattern-primer.html page
+.pattern {
+  clear: both;
+  overflow: hidden; 
+  padding: .5em 1em;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.pattern .display {
+  width: 100%;
+}

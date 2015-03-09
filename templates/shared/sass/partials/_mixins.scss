@@ -49,16 +49,16 @@
   }
 }
 
-@mixin type-size($size, $leading: false) {
+@mixin type-size($size, $line-height: false) {
   font-size: $size;
-  @if $leading { line-height: $leading; }
+  @if $line-height { line-height: $line-height; }
 }
 
-@mixin bold-italic-uppercase-variant($bold :default, $italic: false, $uppercase: false, $variant: false) {
+@mixin bold-italic-uppercase-variant($bold: default, $italic: false, $uppercase: false, $small-caps: false) {
   @if $bold { font-weight: bold; } @else { font-weight: normal; }
   @if $italic { font-style: italic; }
   @if $uppercase { text-transform: uppercase; }
-  @if $variant { font-variant: small-caps; }
+  @if $small-caps { font-variant: small-caps; }
 }
 
 @mixin content-before-after($content, $before: default, $after:false ) {

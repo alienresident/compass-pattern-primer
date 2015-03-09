@@ -214,11 +214,11 @@ The colors also take advantage of `tint-stack` and `shade-stack` to generate 6 (
 
 ```scss
 $primary-color: #693 !default;
-$black-value: #333 !default;
+$grey-value: #333 !default;
 ```
 
 ```scss
-$black:     tint-stack($black-value);
+$grey:     tint-stack($grey-value);
 $primary:   tint-stack(cs-primary());
 $secondary: tint-stack(cs-secondary());
 $tertiary:  tint-stack(cs-tertiary());

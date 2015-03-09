@@ -1,0 +1,21 @@
+
+
+@mixin typographica($font-family: false, $font-bold: false, $font-italic: false, $font-uppercase, $font-variant, $font-size, $line-height, $padding, $padding-pos, $margin, $margin-pos, $color, $border-width, $border-style, $border-color) {
+
+  @if ( $font-family ) { font-family: $font-family; }
+  
+  @if ( $font-bold || $font-italic || $font-uppercase || $font-variant ) {
+    @include bold-italic-uppercase-variant($font-bold, $font-italic, $font-uppercase, $font-variant);
+  }
+  
+  @if ( $font-size ) { @include type-size($font-size, $line-height); }
+  
+  @if ( $padding ) { @include margin-padding(padding, $padding, $padding-pos); }
+  
+  @if ( $margin ) { @include margin-padding(margin, $margin, $margin-pos); }
+  
+  @if ( $color ) { color: $color; }
+  
+  @if ( $border-width ) { @include border-outline(border, $border-width, $border-style, $border-color); }
+
+}

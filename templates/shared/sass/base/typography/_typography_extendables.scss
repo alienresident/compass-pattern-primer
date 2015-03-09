@@ -1,0 +1,63 @@
+//////////////////////////////
+// EXTENDABLES: For Base styles 
+//////////////////////////////
+
+%h1 {
+  font-family: $header-font-family;
+  @include bold-italic-uppercase-variant($h1-font-bold, $h1-font-italic, $h1-font-uppercase, $h1-font-variant);
+  @include type-size($h1-font-size, $h1-line-height);
+  @include margin-padding(padding, $h1-padding, $h1-padding-pos);
+  @include margin-padding(margin, $h1-margin, $h1-margin-pos);
+  color: $h1-color;
+  @include border-outline(border, $h1-border-width, $h1-border-style, $h1-border-color);
+}
+
+%h2 {
+  font-family: $header-font-family;
+  @include bold-italic-uppercase-variant($h2-font-bold, $h2-font-italic, $h2-font-uppercase, $h2-font-variant);
+  @include type-size($h2-font-size, $h2-line-height);
+  @include margin-padding(padding, $h2-padding, $h2-padding-pos);
+  @include margin-padding(margin, $h2-margin, $h2-margin-pos);
+  color: $h2-color;
+  @include border-outline(border, $h2-border-width, $h2-border-style, $h2-border-color);
+}
+
+%h3 {
+  font-family: $header-font-family;
+  @include bold-italic-uppercase-variant($h3-font-bold, $h3-font-italic, $h3-font-uppercase, $h3-font-variant);
+  @include type-size($h3-font-size, $h3-line-height);
+  @include margin-padding(padding, $h3-padding, $h3-padding-pos);
+  @include margin-padding(margin, $h3-margin, $h3-margin-pos);
+  color: $h3-color;
+  @include border-outline(border, $h3-border-width, $h3-border-style, $h3-border-color);
+}
+
+%h4 {
+  font-family: $header-font-family;
+  @include bold-italic-uppercase-variant($h4-font-bold, $h4-font-italic, $h4-font-uppercase, $h4-font-variant);
+  @include type-size($h4-font-size, $h4-line-height);
+  @include margin-padding(padding, $h4-padding, $h4-padding-pos);
+  @include margin-padding(margin, $h4-margin, $h4-margin-pos);
+  color: $h4-color;
+  @include border-outline(border, $h4-border-width, $h4-border-style, $h4-border-color);
+}
+
+%h5 {
+  font-family: $header-font-family;
+  @include bold-italic-uppercase-variant($h5-font-bold, $h5-font-italic, $h5-font-uppercase, $h5-font-variant);
+  @include type-size($h5-font-size, $h5-line-height);
+  @include margin-padding(padding, $h5-padding, $h5-padding-pos);
+  @include margin-padding(margin, $h5-margin, $h5-margin-pos);
+  color: $h5-color;
+  @include border-outline(border, $h5-border-width, $h5-border-style, $h5-border-color);
+}
+
+%h6 {
+  font-family: $header-font-family;
+  @include bold-italic-uppercase-variant($h6-font-bold, $h6-font-italic, $h6-font-uppercase, $h6-font-variant);
+  @include type-size($h6-font-size, $h6-line-height);
+  @include margin-padding(padding, $h6-padding, $h6-padding-pos);
+  @include margin-padding(margin, $h6-margin, $h6-margin-pos);
+  color: $h6-color;
+  @include border-outline(border, $h6-border-width, $h6-border-style, $h6-border-color);
+}

@@ -5,7 +5,7 @@
 @import 'toolkit/colours';  // tint-stack, shade-stack etc
 @import "singularitygs"; // require for generate-colour-guide mixin
 
-@include generate-colour-guide($black, $primary, $secondary, $tertiary, $quadrary);
+@include generate-colour-guide($grey, $primary, $secondary, $tertiary, $quadrary);
 
 // Styling for the pattern-primer.html page
 .pattern {
